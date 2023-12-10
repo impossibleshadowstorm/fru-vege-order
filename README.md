@@ -18,8 +18,8 @@ Welcome to Fru-Vege-Order, your go-to solution for online fruit and vegetable or
 
 ## Team Members
 
-- [Your Name]
-- Ravi Kumar
+- [Sumit Saurav](https://github.com/impossibleshadowstorm)
+- [Ravi Kumar](https://github.com/ravikumar8292)
 
 ## Features
 
