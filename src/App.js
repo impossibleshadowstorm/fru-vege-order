@@ -1,7 +1,8 @@
 import "./App.css";
+import Home from "./pages/home"
 
 function App() {
-  return <div className="h-[112px] w-[120px] bg-black"></div>;
+  return <Home />
 }
 
 export default App;
