@@ -33,7 +33,6 @@ Welcome to Fru-Vege-Order, your go-to solution for online fruit and vegetable or
 
 - React
 - Tailwind CSS
-- [Additional Technologies, if any]
 
 ## Getting Started
 
