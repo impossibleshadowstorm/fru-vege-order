@@ -11,7 +11,7 @@
 
   .light-theme{
     --home-header: #F7F5EB;
-    --home-header-text: rgb(15, 14, 14);
+    --home-header-text: rgb(0, 0, 0);
     --other-header-text: white;
     --other-header: #071C1F;
     --header-cta-button-bg: #80B500;
