@@ -15,17 +15,20 @@ module.exports = {
       xl: "1300px",
     },
     extend: {
-      backgroundColor:{
-        homeHeaderBg:"var(--landing-sec-bg)",
-        otherHeaderBg:"var(--landing-sec-bg)",
+      backgroundColor: {
+        homeHeaderBg: "var(--home-header-bg)",
+        otherHeaderBg: "var(--other-header-bg)",
         headerCtaButtonBg: "var(--header-cta-button-bg)",
-        landingSecBg:"var(--landing-sec-bg)",
+        landingSecBg: "var(--landing-sec-bg)",
       },
-      textColor:{
-        homeHeaderText:"var(--home-header-text)",
-        otherHeaderText:"var(--other-header-text)"
-      }
-
+      textColor: {
+        homeHeaderText: "var(--home-header-text)",
+        otherHeaderText: "var(--other-header-text)",
+      },
+      borderColor: {
+        homeBorder: "var(--home-header-bg)",
+        otherBorder: "var(--other-header-bg)",
+      },
     },
   },
   plugins: [],

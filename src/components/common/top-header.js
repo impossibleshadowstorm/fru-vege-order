@@ -9,7 +9,7 @@ import {
   FaArrowDown,
 } from "react-icons/fa";
 
-const Header = () => {
+const TopHeader = () => {
   return (
     <header className="flex items-center justify-center">
       <div className="flex justify-between w-[76vw] h-[50px] items-center ">
@@ -39,4 +39,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default TopHeader;

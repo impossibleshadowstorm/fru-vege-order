@@ -2,11 +2,11 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div className="bg-[#F7F5EB] h-[70vh] flex justify-center">
+    <div className="bg-landingSecBg h-[70vh] flex justify-center">
       <div className="flex justify-around w-[90vw]">
         <div className="ml-12 h-[50vh] flex flex-col items-center justify-center">
           <div className="flex gap-1 w-[29vw] justify-left items-left mb-4">
-            <img src="pic1.png" alt="pic1" />
+            <img src="/images/pic1.png" alt="pic1" />
             <p>100% Genuine Product</p>
           </div>
           <div className="flex w-[30vw] justify-left">
@@ -21,7 +21,7 @@ const Home = () => {
         </div>
         </div>
         <div className="">
-          <img src="vegpic1.png" alt="veg1" className="w-[46vw] h-[48vh]" />
+          <img src="/images/vegpic1.png" alt="veg1" className="w-[46vw] h-[48vh]" />
         </div>
       </div>
     </div>

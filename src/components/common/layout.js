@@ -8,16 +8,15 @@ const Layout = () => {
   const { theme } = useThemeContext();
   const location = useLocation();
 
-  // Check if the current pathname is the home page ("/")
-  const isHomePage = location.pathname === '/';
+  const isHomePage = location.pathname === "/";
 
   return (
     <div className={`${theme}`}>
-      <div className="bg-homeHeaderBg">
-        {isHomePage ?? <TopHeader />}
-        <hr></hr>
+      <div className={`${isHomePage ? "bg-homeHeaderBg" : "bg-otherHeaderBg"}`}>
+        {isHomePage ? <TopHeader /> : null}
+        <hr className={`${isHomePage ? "border-homeBorder" : "border-otherBorder"}`}/>
         <div className="w-[100vw] h-[30px]"></div>
-        <Header />
+        <Header isHomePage={isHomePage} />
         <div className="w-[100vw] h-[30px]"></div>
       </div>
       <div>{<Outlet />}</div>
