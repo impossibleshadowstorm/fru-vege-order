@@ -24,6 +24,8 @@ module.exports = {
       textColor: {
         homeHeaderText: "var(--home-header-text)",
         otherHeaderText: "var(--other-header-text)",
+        textColor: "var(--text-color)",
+        otherTextColor: "var(--other-text-color)",
       },
       borderColor: {
         homeBorder: "var(--home-header-bg)",

@@ -13,9 +13,11 @@
     --home-header-bg: #F7F5EB;
     --home-header-text: rgb(0, 0, 0);
     --other-header-text: white;
-    --other-header-bg: #071C1F;
+    --other-header-bg: #070701;
     --header-cta-button-bg: #80B500;
     --landing-sec-bg: #F7F5EB;
+    --text-color: #312e81;
+    --other-text-color:#4943f8;
   }
 
 

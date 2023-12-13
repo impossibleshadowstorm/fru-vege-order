@@ -11,8 +11,8 @@ import {
 
 const TopHeader = () => {
   return (
-    <header className="flex items-center justify-center">
-      <div className="flex justify-between w-[76vw] h-[50px] items-center ">
+    <header className="flex items-center justify-around container mx-auto">
+      <div className="flex justify-between md:pl-3 md:w-[76vw] w-[90vw] h-[50px] items-center ">
         <div className="flex gap-8">
           <div className="flex gap-1 items-center">
             <FaMapMarkerAlt size={16} color="green" />
@@ -22,11 +22,11 @@ const TopHeader = () => {
             <FaEnvelope size={16} color="green" /> <h5>info@webmail.com</h5>
           </div>
         </div>
-        <div className="flex gap-5">
+        <div className="flex gap-5 md:ml-12">
           <div className="flex items-center gap-2">
             English <FaArrowDown size={16} color="green" />
           </div>
-          <div className="contact-icon flex gap-5">
+          <div className="contact-icon flex items-center gap-5">
             <FaFacebook size={16} />
             <FaInstagram size={16} />
             <FaTwitter size={16} />
