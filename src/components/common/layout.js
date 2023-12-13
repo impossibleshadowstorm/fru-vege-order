@@ -14,7 +14,7 @@ const Layout = () => {
     <div className={`${theme}`}>
       <div className={`${isHomePage ? "bg-homeHeaderBg" : "bg-otherHeaderBg"}`}>
         {isHomePage ? <TopHeader /> : null}
-        <hr className={`${isHomePage ? "border-homeBorder" : "border-otherBorder"}`}/>
+        <hr className={`${isHomePage ? "homeBorder" : "border-otherBorder"}`}/>
         <div className="w-[100vw] h-[30px]"></div>
         <Header isHomePage={isHomePage} />
         <div className="w-[100vw] h-[30px]"></div>
