@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import RightLandingSection from "./rightlanding-section";
 import LeftLandingSection from "./leftlanding-section";
+import {motion} from 'framer-motion';
 
 const images = ["/images/vegpic1.png", "/images/vegpic2.png"];
 
@@ -27,12 +28,12 @@ const LandingSection = () => {
   return (
     <div className="bg-landingSecBg md:h-[70vh] h-[100vh] flex justify-center items-center">
       {/* left arrow */}
-      <div
+      <motion.div animate={{ x: 20, scale:1 }} initial={{scale:0}} transition={{ duration: 1.5 }}
         onClick={moveBackward}
         className="w-[60px] h-[60px] text-size-2 flex justify-center items-center md:ml-8 ml-1 border border-solid border-gray-200 hover:bg-headerCtaButtonBg hover:text-[white]"
       >
         <FaArrowLeft size={22} className="w-6 h-5" />
-      </div>
+      </motion.div>
       <div
         className={`flex md:flex-row ${
           cIdx % 2 === 0 ? "" : "md:flex-row-reverse"
@@ -44,12 +45,12 @@ const LandingSection = () => {
         {/* Right Image Div */}
       </div>
       {/* right arrow */}
-      <div
+      <motion.div animate={{ x:-20, scale:1 }} initial={{scale:0}} transition={{ duration: 1.5 }}
         onClick={moveForward}
         className="w-[60px] h-[60px] text-size-2 flex justify-center items-center md:mr-8 mr-1 border border-solid border-gray-200 hover:bg-headerCtaButtonBg hover:text-[white]"
       >
         <FaArrowRight size={22} className="w-6 h-5" />
-      </div>
+      </motion.div>
     </div>
   );
 };

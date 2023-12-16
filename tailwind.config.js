@@ -15,6 +15,14 @@ module.exports = {
       xl: "1300px",
     },
     extend: {
+
+      backgroundImage: {
+        thirdsectionImg: "url('/images/thirdsection-img.jpg')",
+      },
+
+      fontFamily: {
+        rajdhani: ['Rajdhani'],
+      },
       backgroundColor: {
         homeHeaderBg: "var(--home-header-bg)",
         otherHeaderBg: "var(--other-header-bg)",

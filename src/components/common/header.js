@@ -14,7 +14,7 @@ const Header = ({ isHomePage }) => {
           />
         </div>
         {/* <div className="w-20px"></div> */}
-        <div className="flex md:gap-12 gap-9 w-max m-auto items-center">
+        <div className="flex md:gap-12 gap-9 items-center">
           <div
             className={`flex gap-4 ${
               isHomePage ? "text-homeHeaderText" : "text-otherHeaderText"
