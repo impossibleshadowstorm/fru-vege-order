@@ -53,32 +53,32 @@ const categoryData = [
   {
     name: "Browse all",
     items: 235,
-    imgUrl: "/images/3rd-sec-category-1.png",
+    imgUrl: "/images/home/category/3rd-sec-category-1.png",
   },
   {
     name: "Vegetables",
     items: 78,
-    imgUrl: "/images/3rdsec-category-2.png",
+    imgUrl: "/images/home/category/3rdsec-category-2.png",
   },
   {
     name: "Fruits",
     items: 45,
-    imgUrl: "/images/3rdsec-category-3.png",
+    imgUrl: "/images/home/category/3rdsec-category-3.png",
   },
   {
     name: "Meat",
     items: 15,
-    imgUrl: "/images/3rdsec-category-4.png",
+    imgUrl: "/images/home/category/3rdsec-category-4.png",
   },
   {
     name: "Fish",
     items: 15,
-    imgUrl: "/images/3rdsec-category-5.png",
+    imgUrl: "/images/home/category/3rdsec-category-5.png",
   },
   {
     name: "Others",
     items: 85,
-    imgUrl: "/images/3rdsec-category-3.png",
+    imgUrl: "/images/home/category/3rdsec-category-3.png",
   },
 ];
 
@@ -94,7 +94,7 @@ const TopSection = () => {
     <div className="bg-landingSecBg h-[76vh]">
       <div
         className="bg-cover bg-center h-[50vh]"
-        style={{ backgroundImage: "url('/images/thirdsection-img.jpg')" }}
+        style={{ backgroundImage: "url('/images/home/category/thirdsection-img.jpg')" }}
       >
         {/* <div className="flex justify-center items-center relative top-[6rem]"> */}
         <p className="text-[white] text-center text-6xl font-bold pt-14">

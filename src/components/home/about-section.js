@@ -38,7 +38,7 @@ const AboutSection = () => {
         viewport={{once:false, amount:0}}
 
         className="w-30vw h-30vh">
-          <img src="/images/2ndsectionpic1.png" alt="2ndsectionpic" />
+          <img src="/images/home/category/2ndsectionpic1.png" alt="2ndsectionpic" />
         </motion.div>
 
         <motion.div 
