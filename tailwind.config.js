@@ -34,6 +34,7 @@ module.exports = {
         otherHeaderText: "var(--other-header-text)",
         textColor: "var(--text-color)",
         otherTextColor: "var(--other-text-color)",
+        hoverTextColor: "var(--hover-text-color)"
       },
       borderColor: {
         homeBorder: "var(--home-header-bg)",
