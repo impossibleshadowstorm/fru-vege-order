@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import RightLandingSection from "./rightlanding-section";
-import LeftLandingSection from "./leftlanding-section";
+import RightLandingSection from "./right-landing-section";
+import LeftLandingSection from "./left-landing-section";
 import {motion} from 'framer-motion';
 
 const images = ["/images/vegpic1.png", "/images/vegpic2.png"];

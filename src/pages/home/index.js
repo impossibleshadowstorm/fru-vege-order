@@ -1,7 +1,8 @@
 import React from "react";
-import LandingSection from "../../components/home/landing-section";
+import LandingSection from "../../components/home/landing/landing-section";
 import AboutSection from "../../components/home/about-section";
-import TopSection from "../../components/home/top-section";
+import TopSection from "../../components/home/top-category-section";
+import OurProducts from "../../components/home/product/ourProducts";
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
       <LandingSection />
       <AboutSection />
       <TopSection />
+      <OurProducts />
     </>
   );
 };
