@@ -9,7 +9,7 @@
     --fill-color-indicator: rgb(220 38 38);
   }
 
-  .light-theme{
+  .light-theme {
     --home-header-bg: #F7F5EB;
     --home-header-text: rgb(0, 0, 0);
     --other-header-text: white;
