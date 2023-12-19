@@ -3,135 +3,188 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import SingleProductCard from "./single-product-card";
+import { motion } from "framer-motion";
+import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
+
+const previousArrow = {
+  hidden: { opacity: 0, x: "10vw" },
+  show: {
+    opacity: 1,
+    x: "0",
+    transition: {
+      type: "spring",
+      delay: 0.2,
+    },
+  },
+};
+
+const nextArrow = {
+  hidden: { opacity: 0, x: "-10vw" },
+  show: {
+    opacity: 1,
+    x: "0",
+    transition: {
+      type: "spring",
+      delay: 0.2,
+    },
+  },
+};
 
 const data = {
   food_drinks: [
     {
-      name: "Fruits2",
+      name: "Cake with Juice",
       items: 45,
-      imgUrl: "/images/home/product/dried-food/1.jpg",
+      imgUrl: "/images/home/product/food-drinks/1.webp",
     },
     {
-      name: "Fruits2",
+      name: "Juice",
       items: 45,
-      imgUrl: "/images/home/product/dried-food/1.jpg",
+      imgUrl: "/images/home/product/food-drinks/2.webp",
     },
     {
-      name: "Meat3",
+      name: "Ice-Drinks",
       items: 15,
-      imgUrl: "/images/home/product/dried-food/1.jpg",
+      imgUrl: "/images/home/product/food-drinks/3.webp",
     },
     {
-      name: "Fish4",
+      name: "Cold-Juice",
       items: 15,
-      imgUrl: "/images/home/product/dried-food/1.jpg",
+      imgUrl: "/images/home/product/food-drinks/4.webp",
     },
     {
-      name: "Others5",
+      name: "Beer-Ice",
       items: 85,
-      imgUrl: "/images/home/product/dried-food/1.jpg",
+      imgUrl: "/images/home/product/food-drinks/5.webp",
     },
     {
-      name: "Others6",
+      name: "Ice-Drinks",
       items: 85,
-      imgUrl: "/images/home/product/dried-food/1.jpg",
+      imgUrl: "/images/home/product/food-drinks/6.webp",
     },
+
     {
-      name: "Vegetables7",
-      items: 78,
-      imgUrl: "/images/3rdsec-category-2.png",
-    },
-    {
-      name: "Fruits8",
+      name: "Fruit-Juice",
       items: 45,
-      imgUrl: "/images/home/product/dried-food/1.jpg",
+      imgUrl: "/images/home/product/food-drinks/7.webp",
     },
     {
-      name: "Meat9",
+      name: "Beer-Ice",
       items: 15,
-      imgUrl: "/images/home/product/dried-food/1.jpg",
+      imgUrl: "/images/home/product/food-drinks/8.webp",
     },
     {
-      name: "Fish10",
+      name: "Cold-Juice",
       items: 15,
-      imgUrl: "/images/home/product/dried-food/1.jpg",
+      imgUrl: "/images/home/product/food-drinks/9.webp",
     },
     {
-      name: "Others11",
+      name: "Cold-Juice",
       items: 85,
-      imgUrl: "/images/home/product/dried-food/1.jpg",
+      imgUrl: "/images/home/product/food-drinks/10.webp",
     },
     {
-      name: "Others12",
+      name: "Beer-Ice",
       items: 85,
-      imgUrl: "/images/home/product/dried-food/1.jpg",
+      imgUrl: "/images/home/product/food-drinks/6.webp",
     },
     {
-      name: "Vegetables13",
-      items: 78,
-      imgUrl: "/images/3rdsec-category-2.png",
-    },
-    {
-      name: "Fruits14",
+      name: "Fruit-Juice",
       items: 45,
-      imgUrl: "/images/home/product/dried-food/1.jpg",
+      imgUrl: "/images/home/product/food-drinks/4.webp",
     },
     {
-      name: "Meat15",
+      name: "Beer-Ice",
       items: 15,
-      imgUrl: "/images/home/product/dried-food/1.jpg",
+      imgUrl: "/images/home/product/food-drinks/3.webp",
     },
     {
-      name: "Fish16",
+      name: "Cold-Juice",
       items: 15,
-      imgUrl: "/images/home/product/dried-food/1.jpg",
-    },
-    {
-      name: "Others17",
-      items: 85,
-      imgUrl: "/images/home/product/dried-food/1.jpg",
-    },
-    {
-      name: "Others18",
-      items: 85,
-      imgUrl: "/images/home/product/dried-food/1.jpg",
-    },
-    {
-      name: "Others19",
-      items: 85,
-      imgUrl: "/images/home/product/dried-food/1.jpg",
+      imgUrl: "/images/home/product/food-drinks/7.webp",
     },
   ],
   vegetables: [
     {
-      name: "Vegetables",
+      name: "Tomato",
       items: 78,
-      imgUrl: "/images/3rdsec-category-2.png",
+      imgUrl: "/images/home/product/vegitables/1.webp",
     },
     {
-      name: "Fruits",
+      name: "Chilli",
       items: 45,
-      imgUrl: "/images/home/product/dried-food/1.jpg",
+      imgUrl: "/images/home/product/vegitables/2.webp",
     },
     {
-      name: "Meat",
+      name: "Veg1",
       items: 15,
-      imgUrl: "/images/home/product/dried-food/1.jpg",
+      imgUrl: "/images/home/product/vegitables/3.webp",
     },
     {
-      name: "Fish",
+      name: "patacovi",
       items: 15,
-      imgUrl: "/images/home/product/dried-food/1.jpg",
+      imgUrl: "/images/home/product/vegitables/4.webp",
+    },
+    {
+      name: "LadiesFinger",
+      items: 85,
+      imgUrl: "/images/home/product/vegitables/5.jpg",
+    },
+    {
+      name: "Green-Tomato",
+      items: 85,
+      imgUrl: "/images/home/product/vegitables/6.webp",
+    },
+
+    {
+      name: "Veg2",
+      items: 45,
+      imgUrl: "/images/home/product/vegitables/7.webp",
+    },
+    {
+      name: "Veg3",
+      items: 15,
+      imgUrl: "/images/home/product/vegitables/8.webp",
+    },
+    {
+      name: "Cauliflower",
+      items: 15,
+      imgUrl: "/images/home/product/vegitables/9.webp",
+    },
+    {
+      name: "Carrots",
+      items: 85,
+      imgUrl: "/images/home/product/vegitables/10.webp",
+    },
+    {
+      name: "Veg4",
+      items: 85,
+      imgUrl: "/images/home/product/vegitables/11.webp",
+    },
+    {
+      name: "Onion",
+      items: 85,
+      imgUrl: "/images/home/product/vegitables/12.webp",
+    },
+    {
+      name: "Patato",
+      items: 85,
+      imgUrl: "/images/home/product/vegitables/13.webp",
     },
     {
       name: "Others",
       items: 85,
-      imgUrl: "/images/home/product/dried-food/1.jpg",
+      imgUrl: "/images/home/product/vegitables/14.webp",
     },
     {
       name: "Others",
       items: 85,
-      imgUrl: "/images/home/product/dried-food/1.jpg",
+      imgUrl: "/images/home/product/vegitables/15.webp",
+    },
+    {
+      name: "Others",
+      items: 85,
+      imgUrl: "/images/home/product/vegitables/16.webp",
     },
   ],
   dried_food: [
@@ -159,6 +212,31 @@ const data = {
       name: "Others",
       items: 85,
       imgUrl: "/images/home/product/dried-food/5.jpg",
+    },
+    {
+      name: "Others",
+      items: 85,
+      imgUrl: "/images/home/product/dried-food/6.jpg",
+    },
+    {
+      name: "Meat",
+      items: 15,
+      imgUrl: "/images/home/product/dried-food/7.jpg",
+    },
+    {
+      name: "Fish",
+      items: 15,
+      imgUrl: "/images/home/product/dried-food/8.jpg",
+    },
+    {
+      name: "Others",
+      items: 85,
+      imgUrl: "/images/home/product/dried-food/9.jpg",
+    },
+    {
+      name: "Others",
+      items: 85,
+      imgUrl: "/images/home/product/dried-food/10.jpg",
     },
     {
       name: "Others",
@@ -197,6 +275,41 @@ const data = {
       items: 85,
       imgUrl: "/images/home/product/bread-cake/6.webp",
     },
+    {
+      name: "Fruits",
+      items: 45,
+      imgUrl: "/images/home/product/bread-cake/7.webp",
+    },
+    {
+      name: "Meat",
+      items: 15,
+      imgUrl: "/images/home/product/bread-cake/8.webp",
+    },
+    {
+      name: "Fish",
+      items: 15,
+      imgUrl: "/images/home/product/bread-cake/9.webp",
+    },
+    {
+      name: "Others",
+      items: 85,
+      imgUrl: "/images/home/product/bread-cake/10.webp",
+    },
+    {
+      name: "Others",
+      items: 85,
+      imgUrl: "/images/home/product/bread-cake/11.webp",
+    },
+    {
+      name: "Others",
+      items: 85,
+      imgUrl: "/images/home/product/bread-cake/12.jpg",
+    },
+    {
+      name: "Others",
+      items: 85,
+      imgUrl: "/images/home/product/bread-cake/13.jpg",
+    },
   ],
   fish_meat: [
     {
@@ -212,11 +325,21 @@ const data = {
     {
       name: "Meat",
       items: 15,
-      imgUrl: "/images/home/product/fish-meat/5.webp",
+      imgUrl: "/images/home/product/fish-meat/3.webp",
     },
     {
       name: "Fish",
       items: 15,
+      imgUrl: "/images/home/product/fish-meat/4.webp",
+    },
+    {
+      name: "Others",
+      items: 85,
+      imgUrl: "/images/home/product/fish-meat/5.webp",
+    },
+    {
+      name: "Others",
+      items: 85,
       imgUrl: "/images/home/product/fish-meat/6.webp",
     },
     {
@@ -225,26 +348,103 @@ const data = {
       imgUrl: "/images/home/product/fish-meat/7.webp",
     },
     {
-      name: "Others",
-      items: 85,
+      name: "Meat",
+      items: 15,
       imgUrl: "/images/home/product/fish-meat/8.webp",
+    },
+    {
+      name: "Fish",
+      items: 15,
+      imgUrl: "/images/home/product/fish-meat/9.webp",
     },
     {
       name: "Others",
       items: 85,
-      imgUrl: "/images/home/product/fish-meat/9.webp",
+      imgUrl: "/images/home/product/fish-meat/10.webp",
+    },
+    {
+      name: "Others",
+      items: 85,
+      imgUrl: "/images/home/product/fish-meat/11.webp",
+    },
+    {
+      name: "Others",
+      items: 85,
+      imgUrl: "/images/home/product/fish-meat/12.webp",
     },
   ],
 };
 
-const Products = ({category}) => {
+function SampleNextArrow(props) {
+  const { onClick } = props;
+  return (
+    <motion.div
+      variants={nextArrow}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0 }}
+      className="md:block md:bg-[white] rounded rounded-full absolute top-[350px] -right-[71px] 
+      p-4 border-solid border-2 border-gray-300 hover:bg-headerCtaButtonBg hover:text-white"
+      // style={{ ...style}}
+      onClick={onClick}
+    >
+      <FaArrowRight className="text-lg" />
+    </motion.div>
+  );
+}
 
+function SamplePrevArrow(props) {
+  const { onClick } = props;
+  return (
+    <motion.div
+      variants={previousArrow}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0 }}
+      className="md:block md:bg-[white] rounded rounded-full absolute top-[350px] -left-[71px] 
+      p-4 border-solid border-2 border-gray-300 hover:bg-headerCtaButtonBg hover:text-white"
+      onClick={onClick}
+    >
+      <FaArrowLeft className="text-lg" />
+    </motion.div>
+  );
+}
+
+const Products = ({ category }) => {
   const settings = {
     dots: false,
     infinite: false,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+    // responsive: [
+    //   {
+    //     breakpoint: 1024,
+    //     settings: {
+    //       slidesToShow: 3,
+    //       slidesToScroll: 1,
+    //       infinite: false,
+    //       dots: true
+    //     }
+    //   },
+    //   {
+    //     breakpoint: 700,
+    //     settings: {
+    //       slidesToShow: 2,
+    //       slidesToScroll: 1,
+    //       initialSlide: 2
+    //     }
+    //   },
+    //   {
+    //     breakpoint: 480,
+    //     settings: {
+    //       slidesToShow: 1,
+    //       slidesToScroll: 1
+    //     }
+    //   }
+    // ]
   };
   return (
     <div className="flex flex-col container mx-auto justify-center items-center gap-2 ">
@@ -253,7 +453,6 @@ const Products = ({category}) => {
           {data[category].length % 2 === 0
             ? data[category].map((item, key) => {
                 if (key % 2 === 0) {
-                  console.log(key);
                   return (
                     <div>
                       <SingleProductCard
@@ -277,7 +476,6 @@ const Products = ({category}) => {
               })
             : data[category].map((item, key) => {
                 if (key % 2 === 0) {
-                  console.log(key);
                   return (
                     <div>
                       <SingleProductCard

@@ -4,8 +4,8 @@ import { FaSearch, FaUserAlt, FaCartPlus } from "react-icons/fa";
 
 const Header = ({ isHomePage }) => {
   return (
-    <div className="flex items-center md:container mx-auto">
-      <div className="flex md:flex-row flex-col md:gap-0 gap-5 justify-between md:pl-9 md:pr-14 md:mr-6 items-center md:w-[90vw] w-[95vw] md:p-0 p-6">
+    <div className="flex items-center md:mx-[100px] mx-4 md:container md:mx-auto">
+      <div className="flex md:flex-row flex-col md:gap-0 md:gap-5 gap-3 justify-between md:pl-9 md:pr-14 md:mr-6 mr-3 items-center md:w-[90vw] w-[95vw] md:p-0 p-3">
         <div className="">
           <img
             src="/images/logo.png"

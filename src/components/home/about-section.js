@@ -29,7 +29,7 @@ const AboutSection = () => {
   return (
     <div>
       <motion.div 
-      className="container gap-14 mx-auto md:pl-12 flex md:flex-row flex-col justify-center items-center md:mt-14 mt-12 md:p-5 ">
+      className="container gap-14 mx-auto md:pl-12 flex lg:flex-row flex-col justify-center items-center md:mt-14 mt-12 md:p-5 ">
 
         <motion.div
         variants={picContainer}
@@ -47,21 +47,21 @@ const AboutSection = () => {
          whileInView="show"
          viewport={{once:false, amount:0}}
 
-        className="container mx-auto md:pl-12 md:h-[90vh] md:w-[50%] w-[100%] flex flex-col items-left md:justify-center justify-start gap-8">
-          <div className="text-base font-bold text-[#80B500]">
+        className="container mx-auto lg:pl-12 lg:h-[90vh] lg:w-[50%] w-[100%] flex flex-col items-left lg:justify-center justify-start gap-8">
+          <div className="text-base lg:text-left md:text-center font-bold text-[#80B500]">
             KNOW MORE ABOUT SHOP
           </div>
-          <div className="md:text-5xl text-4xl md:w-[25vw] font-bold">
+          <div className="md:text-5xl text-4xl lg:w-[25vw] font-bold">
             <p>Trusted Organic Food Store</p>
           </div>
-          <div className="md:w-[31vw] md:pt-1 md:pb-1 flex flex-row gap-6">
+          <div className="lg:w-[31vw] md:pt-1 md:pb-1 flex flex-row gap-6">
             <div className="h-[55px] border border-5 border-[#80B500]"></div>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse,
               amet ab? Molestias odio accusamus accusantium voluptatem.
             </p>
           </div>
-          <div className="md:w-[31vw]">
+          <div className="lg:w-[31vw]">
             <span>
               {" "}
               sellers who aspire to be good, do good, and spread goodness. We

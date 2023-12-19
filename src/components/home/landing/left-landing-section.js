@@ -20,7 +20,7 @@ const LeftLandingSection = ({ cIdx }) => {
         initial={{ opacity: 0 }}
         animate={{ y: -20, opacity: 1 }}
         transition={{ duration: 1.5 }}
-        className={`flex flex-row gap-1 md:items-center w-[100%] md:w-[30vw] ${
+        className={`flex flex-row gap-1 md:items-center w-[100%] md:w-[30vw] md:pt-0 pt-4 ${
           cIdx % 2 === 0 ? "md:justify-start" : "md:justify-end"
         } justify-center`}
       >

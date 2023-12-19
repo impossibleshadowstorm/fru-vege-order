@@ -8,43 +8,53 @@ const OurProducts = () => {
     setCategory(categoryValue);
   };
 
+  const changeColor = (text) => {
+    return category === text ? "text-hoverTextColor":"text-black";
+  };
+ 
+
   return (
     <div className="container mx-auto md:pl-12 mt-[50px] mb-[50px]">
       <div className="">
         <p className="text-center text-6xl font-bold pt-14">Our Products</p>
       </div>
 
-      <div className="flex flex-row justify-center items-center gap-10 mt-[49px] pb-[43px] text-base font-semibold">
+      <div className="flex flex-row justify-center items-center gap-10 mt-[49px] pb-[43px] text-md font-semibold">
         <div
-          className="cursor-pointer"
+          className={`${changeColor("food_drinks")} cursor-pointer`}
           onClick={() => handleCategory("food_drinks")}
+        
         >
           FOOD & DRINKS
+         
+        {/* <div className="h-[2px] w-[120px] border border-2 border-[#80B500]"></div> */}
+     
         </div>
+
         <div className="h-[15px] border border-5 border-[#80B500]"></div>
         <div
-          className="cursor-pointer"
-          onClick={() => handleCategory("vegetables")}
+          className={`${changeColor("vegetables")} cursor-pointer`}
+          onClick={(() => handleCategory("vegetables"))}
         >
           VEGETABLES
         </div>
         <div className="h-[15px] border border-5 border-[#80B500]"></div>
         <div
-          className="cursor-pointer"
+          className={`${changeColor("dried_food")} cursor-pointer`}
           onClick={() => handleCategory("dried_food")}
         >
           DRIED FOOD
         </div>
         <div className="h-[15px] border border-5 border-[#80B500]"></div>
         <div
-          className="cursor-pointer"
+          className={`${changeColor("bread_cake")} cursor-pointer`}
           onClick={() => handleCategory("bread_cake")}
         >
           BREAD & CAKE
         </div>
         <div className="h-[15px] border border-5 border-[#80B500]"></div>
         <div
-          className="cursor-pointer active:text-[yellow] visited:text-[green]"
+          className={`${changeColor("fish_meat")} cursor-pointer`}
           onClick={() => handleCategory("fish_meat")}
         >
           FISH & MEAT

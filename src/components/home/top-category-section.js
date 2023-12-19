@@ -3,6 +3,32 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { motion } from "framer-motion";
+import { FaArrowRight, FaArrowLeft} from "react-icons/fa";
+
+const previousArrow = {
+  hidden: { opacity: 0, x:'10vw' },
+  show: {
+    opacity: 1,
+    x: '0',
+    transition: {
+      type: 'spring',
+      delay: 0.2
+    }
+  }
+}
+
+const nextArrow = {
+  hidden: { opacity: 0, x:'-10vw' },
+  show: {
+    opacity: 1,
+    x: '0',
+    transition: {
+      type: 'spring',
+      delay: 0.2
+    }
+  }
+}
+
 
 const boxDiv = {
   // hidden: { opacity: 0, x: "-1vw" },
@@ -82,18 +108,81 @@ const categoryData = [
   },
 ];
 
+function SampleNextArrow(props) {
+  const { onClick } = props;
+  return (
+    <motion.div 
+    variants={nextArrow}
+    initial="hidden"
+    whileInView="show"
+    viewport={{once:false, amount:0}}
+
+       className= "md:block md:bg-[white] rounded rounded-full absolute top-[110px] -right-[71px] p-4 hover:bg-headerCtaButtonBg hover:text-white"
+      // style={{ ...style}}
+      onClick={onClick}
+    >
+      <FaArrowRight className="text-lg hover:text-[white]"/>
+    </motion.div>
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { onClick } = props;
+  return (
+    <motion.div
+    variants={previousArrow}
+    initial="hidden"
+    whileInView="show"
+    viewport={{once:false, amount:0}}
+
+      className= "md:block md:bg-[white] rounded rounded-full absolute top-[110px] -left-[71px] p-4 hover:bg-headerCtaButtonBg hover:text-white"
+      onClick={onClick}
+    >
+      <FaArrowLeft className="text-lg hover:text-[white]"/>
+    </motion.div>
+  );
+}
+
 const TopSection = () => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 100,
     slidesToShow: 4,
     slidesToScroll: 1,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
   return (
-    <div className="bg-landingSecBg h-[76vh]">
+    <div className="bg-landingSecBg md:h-[76vh] h-[100vh] md:px-0 my-12">
       <div
-        className="bg-cover bg-center h-[50vh]"
+        className="md:bg-cover md:bg-center h-[50vh]"
         style={{ backgroundImage: "url('/images/home/category/thirdsection-img.jpg')" }}
       >
         {/* <div className="flex justify-center items-center relative top-[6rem]"> */}
@@ -101,7 +190,7 @@ const TopSection = () => {
           Top Categories
         </p>
         {/* </div> */}
-        <div className="container mx-auto gap-9 mt-14">
+        <div className="container mx-auto gap-9 mt-14 relative">
           <Slider {...settings}>
             {categoryData.map((item, key) => (
               <motion.div
@@ -109,7 +198,7 @@ const TopSection = () => {
                 variants={boxDiv}
                 // initial="hidden"
                 // whileHover="show"
-                className="group h-[37vh] bg-[white] border border-y border-gray-1000 relative"
+                className="group lg:h-[37vh] h-[50vh] bg-[white] border border-y border-gray-1000 relative"
               >
                 <div className="flex flex-col justify-center items-center gap-4 pt-12">
                   <img
