@@ -1,53 +1,56 @@
 import React from "react";
-import {motion} from 'framer-motion';
+import { motion } from "framer-motion";
+import CustomImage from "../common/custom-images";
 
 const content = {
-  hidden: { opacity: 0, x:'10vw' },
+  hidden: { opacity: 0, x: "10vw" },
   show: {
     opacity: 1,
-    x: '0',
+    x: "0",
     transition: {
-      type: 'spring',
-      delay: 0.2
-    }
-  }
-}
+      type: "spring",
+      delay: 0.2,
+    },
+  },
+};
 
 const picContainer = {
-  hidden: { opacity: 0, x:'-10vw' },
+  hidden: { opacity: 0, x: "-10vw" },
   show: {
     opacity: 1,
-    x: '0',
+    x: "0",
     transition: {
-      type: 'spring',
-      delay: 0.2
-    }
-  }
-}
+      type: "spring",
+      delay: 0.2,
+    },
+  },
+};
 
 const AboutSection = () => {
   return (
     <div>
-      <motion.div 
-      className="container gap-14 mx-auto md:pl-12 flex lg:flex-row flex-col justify-center items-center md:mt-14 mt-12 md:p-5 ">
-
+      <motion.div className="container gap-14 mx-auto md:pl-12 flex lg:flex-row flex-col justify-center items-center md:mt-14 mt-12 md:p-5 ">
         <motion.div
-        variants={picContainer}
-        initial="hidden"
-        whileInView="show"
-        viewport={{once:false, amount:0}}
-
-        className="w-30vw h-30vh">
+          variants={picContainer}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0 }}
+          className="w-30vw h-30vh"
+        >
+          {/* <CustomImage
+            src="/home/category/2ndsectionpic1.png"
+            alt="2ndsectionpic"
+          /> */}
           <img src="/images/home/category/2ndsectionpic1.png" alt="2ndsectionpic" />
         </motion.div>
 
-        <motion.div 
-         variants={content}
-         initial="hidden"
-         whileInView="show"
-         viewport={{once:false, amount:0}}
-
-        className="container mx-auto lg:pl-12 lg:h-[90vh] lg:w-[50%] w-[100%] flex flex-col items-left lg:justify-center justify-start gap-8">
+        <motion.div
+          variants={content}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0 }}
+          className="container mx-auto lg:pl-12 lg:h-[90vh] lg:w-[50%] w-[100%] flex flex-col items-left lg:justify-center justify-start gap-8"
+        >
           <div className="text-base lg:text-left md:text-center font-bold text-[#80B500]">
             KNOW MORE ABOUT SHOP
           </div>
