@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import CustomImage from "../common/custom-images";
+// import CustomImage from "../common/custom-images";
 
 const content = {
   hidden: { opacity: 0, x: "10vw" },

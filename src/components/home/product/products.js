@@ -36,6 +36,7 @@ const data = {
       name: "Cake with Juice",
       items: 45,
       imgUrl: "/images/home/product/food-drinks/1.webp",
+      
     },
     {
       name: "Juice",
@@ -447,14 +448,14 @@ const Products = ({ category }) => {
     // ]
   };
   return (
-    <div className="flex flex-col container mx-auto justify-center items-center gap-2 ">
-      <div className="container h-[100vh] mx-auto justify-center items-center gap-1">
+    <div className="container mx-auto ">
+      <div className="container h-[100vh] mx-auto">
         <Slider {...settings}>
           {data[category].length % 2 === 0
             ? data[category].map((item, key) => {
                 if (key % 2 === 0) {
                   return (
-                    <div>
+                    <div key={key}>
                       <SingleProductCard
                         name={item.name}
                         discountedPrice={46.0}
@@ -477,7 +478,7 @@ const Products = ({ category }) => {
             : data[category].map((item, key) => {
                 if (key % 2 === 0) {
                   return (
-                    <div>
+                    <div key={key}>
                       <SingleProductCard
                         name={item.name}
                         discountedPrice={46.0}
