@@ -35,13 +35,13 @@ const SingleProductCard = ({
         </div>
         </div>
         )}
-        <div className="text-[white] absolute right-4 top-3 h-[4vh] bg-[#80B500] text-center px-4 rounded-b-lg rounded-r-md shadow-md hover:shadow-xl border">
+        <div className="text-[white] absolute right-4 top-3 h-[4vh] bg-headerCtaButtonBg text-center px-4 rounded-b-lg rounded-r-md shadow-md hover:shadow-xl border">
           -{discountPercent} %
         </div>
       </div>
       <div className="px-6 py-4 text-center">
         <div className="py-1">
-          <ul className="flex text-[#ffb800] justify-center items-center gap-2">
+          <ul className="flex text-starColor justify-center items-center gap-2">
             <li>
               <FaStar size={16} />
             </li>
@@ -57,11 +57,11 @@ const SingleProductCard = ({
             <li>
               <FaRegStar size={16} />
             </li>
-            <li className="text-[#80B500]">(24)</li>
+            <li className="text-textColor">(24)</li>
           </ul>
         </div>
-        <p className="text-base font-bold text-[#80B500]">{name}</p>
-        <div className="flex gap-3 justify-center text-[#80B500] font-semibold">
+        <p className="text-base font-bold text-textColor">{name}</p>
+        <div className="flex gap-3 justify-center text-textColor font-semibold">
           <span>${discountedPrice}</span>
           <span className="line-through">${originalPrice}</span>
         </div>

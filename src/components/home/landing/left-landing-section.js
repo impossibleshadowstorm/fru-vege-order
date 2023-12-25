@@ -1,17 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-// const content = {
-//   hidden: { opacity: 0, y: "100vw" },
-//   show: {
-//     opacity: 1,
-//     x: "0",
-//     transition: {
-//       type: "spring",
-//       delay: 0.2,
-//     },
-//   },
-// };
 
 const LeftLandingSection = ({ cIdx }) => {
   return (
@@ -62,16 +51,11 @@ const LeftLandingSection = ({ cIdx }) => {
         <motion.button
           type="button"
 
-          // variants={content}
-          // // initial="hidden"
-          // animate="show"
-          // // viewport={{once:false, amount:0}}
-          // whileHover={{backgroundColor:'red', x:12}}
-
           initial={{ opacity: 0, backgroundColor: "[#80B500]" }}
           animate={{ y: -30, opacity: 1 }}
           transition={{ scale: { type: "spring", stiffness: 300 } ,duration: 1.5}}
-          className="bg-headerCtaButtonBg text-white h-[52px] w-[198px] font-medium"
+          // className="bg-headerCtaButtonBg text-white h-[52px] w-[198px] font-medium"
+          className="relative bg-headerCtaButtonBg border border-black-600 py-2.5 px-5 font-medium uppercase text-white transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-white before:transition-transform before:duration-300 before:content-[''] hover:text-black before:hover:scale-x-100"
         >
           Explore Products
         </motion.button>
@@ -85,7 +69,9 @@ const LeftLandingSection = ({ cIdx }) => {
           className={`${
             cIdx % 2 === 0
               ? ""
-              : "bg-[white] text-black h-[52px] w-[160px] font-medium"
+              : 
+              // "bg-[white] text-black h-[52px] w-[160px] font-medium"
+              "relative bg-white border border-black-400 py-2.5 px-5 font-medium uppercase text-black transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-black before:transition-transform before:duration-300 before:content-[''] hover:text-white before:hover:scale-x-100"
           }`}
         >
           {cIdx % 2 === 0 ? "" : "Learn More"}

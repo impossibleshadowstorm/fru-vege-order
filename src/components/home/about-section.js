@@ -51,7 +51,7 @@ const AboutSection = () => {
           viewport={{ once: false, amount: 0 }}
           className="container mx-auto lg:pl-12 lg:h-[90vh] lg:w-[50%] w-[100%] flex flex-col items-left lg:justify-center justify-start gap-8"
         >
-          <div className="text-base lg:text-left md:text-center font-bold text-[#80B500]">
+          <div className="text-base lg:text-left md:text-center font-bold text-textColor">
             KNOW MORE ABOUT SHOP
           </div>
           <div className="md:text-5xl text-4xl lg:w-[25vw] font-bold">

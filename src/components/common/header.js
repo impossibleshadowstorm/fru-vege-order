@@ -38,18 +38,18 @@ const Header = ({ isHomePage }) => {
           </div>
           <button
             type="button"
-            className="bg-headerCtaButtonBg text-white h-[52px] w-[138px] font-medium text-sm"
+            className="bg-headerCtaButtonBg text-white h-[52px] w-[138px] font-medium text-sm hover:bg-[#65a30d]"
           >
             GET A QUOTE
           </button>
           <div className="flex gap-3">
-            <div className="flex justify-center items-center bg-white text-black border-red-100 w-[50px] h-[52px] hover:text-otherTextColor">
+            <div className="flex justify-center items-center bg-white text-black border-red-100 w-[50px] h-[52px] hover:text-white hover:bg-headerCtaButtonBg">
               <FaSearch size={19}></FaSearch>
             </div>
-            <div className="flex justify-center items-center bg-white text-black border-red-100 w-[50px] h-[52px] hover:text-otherTextColor">
+            <div className="flex justify-center items-center bg-white text-black border-red-100 w-[50px] h-[52px] hover:text-white hover:bg-headerCtaButtonBg">
               <FaUserAlt size={16} />
             </div>
-            <div className="flex justify-center items-center bg-white text-black border-red-100 w-[50px] h-[52px] hover:text-otherTextColor">
+            <div className="flex justify-center items-center bg-white text-black border-red-100 w-[50px] h-[52px] hover:text-white hover:bg-headerCtaButtonBg">
               <FaCartPlus size={16} />
             </div>
           </div>

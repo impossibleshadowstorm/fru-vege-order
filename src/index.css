@@ -20,6 +20,8 @@
     --text-color: #80b603;
     --other-text-color:#4943f8;
     --hover-text-color: #80b603;
+    --star-text-color: #ffb800;
+    /* --backgroundimg: `url('/images/home/category/thirdsection-img.jpg')`; */
   }
 
 
@@ -28,6 +30,7 @@
     --other-header: #071C1F;
     --header-cta-button-bg: #000;
     --landing-sec-bg: #F7F5EB;
+    /* --backgroundimg: url('/images/home/category/thirdsection-img.jpg'); */
   }
 }
 
