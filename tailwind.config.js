@@ -33,11 +33,15 @@ module.exports = {
         otherHeaderText: "var(--other-header-text)",
         textColor: "var(--text-color)",
         otherTextColor: "var(--other-text-color)",
-        hoverTextColor: "var(--hover-text-color)"
+        hoverTextColor: "var(--hover-text-color)",
+        starColor: "var(--star-text-color)",
       },
       borderColor: {
         homeBorder: "var(--home-header-bg)",
         otherBorder: "var(--other-header-bg)",
+      },
+      bgImages: {
+        // backgroundImg: "var(--backgroundimg)",
       },
     },
   },

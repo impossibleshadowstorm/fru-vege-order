@@ -1,4 +1,5 @@
 import React from "react";
+import { Dropdown } from "flowbite-react";
 import {
   FaMapMarkerAlt,
   FaEnvelope,
@@ -6,7 +7,7 @@ import {
   FaTwitter,
   FaInstagram,
   FaTelegram,
-  FaArrowDown,
+  // FaArrowDown,
 } from "react-icons/fa";
 
 const TopHeader = () => {
@@ -23,14 +24,24 @@ const TopHeader = () => {
           </div>
         </div>
         <div className="flex gap-5 md:ml-12">
-          <div className="flex items-center gap-2">
-            English <FaArrowDown size={16} color="green" />
+          <div className="text-black w-[90px]">
+            <Dropdown label="English" inline>
+              <Dropdown.Item className="text-md w-[130px] h-[30px] flex justify-center px-[67px] hover:bg-[#f1f5f9] hover:text-textColor">Hindi</Dropdown.Item>
+              <Dropdown.Item className="text-md w-[130px] h-[30px] flex justify-center px-[67px] hover:bg-[#f1f5f9] hover:text-textColor">Bengali</Dropdown.Item>
+              <Dropdown.Item className="text-md w-[130px] h-[30px] flex justify-center px-[67px] hover:bg-[#f1f5f9] hover:text-textColor">English</Dropdown.Item>
+              <Dropdown.Item className="text-md w-[130px] h-[30px] flex justify-center px-[67px] hover:bg-[#f1f5f9] hover:text-textColor">French</Dropdown.Item>
+              <Dropdown.Item className="text-md w-[130px] h-[30px] flex justify-center px-[67px] hover:bg-[#f1f5f9] hover:text-textColor">Arabic</Dropdown.Item>
+              <Dropdown.Item className="text-md w-[130px] h-[30px] flex justify-center px-[67px] hover:bg-[#f1f5f9] hover:text-textColor">Chinese</Dropdown.Item>
+            </Dropdown>
           </div>
+          {/* <div className="flex items-center gap-2">
+            English <FaArrowDown size={16} color="green" />
+          </div> */}
           <div className="contact-icon flex items-center gap-5">
-            <FaFacebook size={16} />
-            <FaInstagram size={16} />
-            <FaTwitter size={16} />
-            <FaTelegram size={16} />
+            <FaFacebook size={16} className="cursor-pointer" />
+            <FaInstagram size={16} className="cursor-pointer" />
+            <FaTwitter size={16} className="cursor-pointer" />
+            <FaTelegram size={16} className="cursor-pointer" />
           </div>
         </div>
       </div>
