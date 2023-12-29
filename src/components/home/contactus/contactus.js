@@ -22,7 +22,7 @@ const ContactUs = () => {
           <div className="text-white flex flex-col items-center gap-12 mb-14">
             <div className="flex flex-col items-center gap-5">
               <p className="text-base text-textColor">
-                <b>// ANY QUESTION YOU HAVE //</b>
+                <b>{"//"} ANY QUESTION YOU HAVE {"//"}</b>
               </p>
               <p className="text-5xl">
                 <b>897-876-987-90</b>

@@ -384,9 +384,8 @@ function SampleNextArrow(props) {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0 }}
-      className="md:block md:bg-[white] rounded rounded-full absolute top-[350px] -right-[71px] 
+      className="md:block md:bg-[white] rounded-full absolute top-[350px] -right-[71px] 
       p-4 border-solid border-2 border-gray-300 hover:bg-headerCtaButtonBg hover:text-white"
-      // style={{ ...style}}
       onClick={onClick}
     >
       <FaArrowRight className="text-lg" />
@@ -420,32 +419,6 @@ const Products = ({ category }) => {
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
-    // responsive: [
-    //   {
-    //     breakpoint: 1024,
-    //     settings: {
-    //       slidesToShow: 3,
-    //       slidesToScroll: 1,
-    //       infinite: false,
-    //       dots: true
-    //     }
-    //   },
-    //   {
-    //     breakpoint: 700,
-    //     settings: {
-    //       slidesToShow: 2,
-    //       slidesToScroll: 1,
-    //       initialSlide: 2
-    //     }
-    //   },
-    //   {
-    //     breakpoint: 480,
-    //     settings: {
-    //       slidesToShow: 1,
-    //       slidesToScroll: 1
-    //     }
-    //   }
-    // ]
   };
   return (
     <div className="container mx-auto ">

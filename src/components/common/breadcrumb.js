@@ -5,7 +5,7 @@ const Breadcrumb = ({ title, pageName }) => {
     <div className="visible absolute bottom-[100px] left-[100px] container mx-auto h-[30px] text-white px-[80px] flex justify-between items-center">
       <div className="">
         <p className="text-textColor font-semibold">
-          // WELCOME TO OUR COMPANY
+          {"//"} WELCOME TO OUR COMPANY
         </p>
         <p className="text-[55px] font-bold">{title}</p>
       </div>

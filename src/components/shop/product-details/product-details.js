@@ -4,7 +4,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { motion } from "framer-motion";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
-// import { FaUser, FaTag, FaCalendar } from "react-icons/fa";
 
 const previousArrow = {
     hidden: { opacity: 0, x: "10vw" },
@@ -56,8 +55,7 @@ const previousArrow = {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0 }}
-        className="md:block md:bg-[white] rounded rounded-full border-solid border-2 border-gray-300 absolute top-[270px] -right-[71px] p-4 hover:bg-headerCtaButtonBg hover:text-white"
-        // style={{ ...style}}
+        className="md:block md:bg-[white] rounded-full border-solid border-2 border-gray-300 absolute top-[270px] -right-[71px] p-4 hover:bg-headerCtaButtonBg hover:text-white"
         onClick={onClick}
       >
         <FaArrowRight className="text-lg hover:text-[white]" />
@@ -73,7 +71,7 @@ const previousArrow = {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0 }}
-        className="md:block md:bg-[white] rounded rounded-full border-solid border-2 border-gray-300 absolute top-[270px] -left-[71px] p-4 hover:bg-headerCtaButtonBg hover:text-white"
+        className="md:block md:bg-[white] rounded-full border-solid border-2 border-gray-300 absolute top-[270px] -left-[71px] p-4 hover:bg-headerCtaButtonBg hover:text-white"
         onClick={onClick}
       >
         <FaArrowLeft className="text-lg hover:text-[white]" />

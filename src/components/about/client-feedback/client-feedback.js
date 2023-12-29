@@ -66,8 +66,7 @@ function SampleNextArrow(props) {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0 }}
-      className="md:block md:bg-[white] rounded rounded-full border-solid border-2 border-gray-300 absolute top-[100px] right-[20px] p-4 hover:bg-headerCtaButtonBg hover:text-white"
-      // style={{ ...style}}
+      className="md:block md:bg-[white] rounded-full border-solid border-2 border-gray-300 absolute top-[100px] right-[20px] p-4 hover:bg-headerCtaButtonBg hover:text-white"
       onClick={onClick}
     >
       <FaArrowRight className="text-lg hover:text-[white]" />
@@ -83,7 +82,7 @@ function SamplePrevArrow(props) {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0 }}
-      className="md:block md:bg-[white] rounded rounded-full border-solid border-2 border-gray-300 absolute top-[100px] left-[20px] z-20 p-4 hover:bg-headerCtaButtonBg hover:text-white"
+      className="md:block md:bg-[white] rounded-full border-solid border-2 border-gray-300 absolute top-[100px] left-[20px] z-20 p-4 hover:bg-headerCtaButtonBg hover:text-white"
       onClick={onClick}
     >
       <FaArrowLeft className="text-lg hover:text-[white]" />
@@ -129,7 +128,7 @@ const ClientFeadback = () => {
   };
   return (
     <div className="h-[75vh] bg-homeHeaderBg flex flex-col gap-2 justify-center items-center">
-      <p className="text-textColor">// TESTIMONIALS</p>
+      <p className="text-textColor">{"//"} TESTIMONIALS</p>
       <p className="text-[40px] font-bold">Clients Feedbacks.</p>
 
       <div className="w-[90rem] pt-5">

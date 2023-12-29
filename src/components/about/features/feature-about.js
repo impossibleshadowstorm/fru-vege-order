@@ -4,7 +4,7 @@ const FeatureAbout = () => {
   return (
     <div className="h-[80vh] bg-homeHeaderBg flex flex-col justify-center items-center gap-6">
       <div className="">
-        <p className="text-textColor font-bold">// FEATURES //</p>
+        <p className="text-textColor font-bold">{"//"} FEATURES {"//"}</p>
       </div>
       <div className="mt-[-22px]">
         <p className="text-[60px] font-semibold">Why Choose Us.</p>

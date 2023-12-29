@@ -2,9 +2,7 @@ import React from 'react'
 import {
     FaFacebook,
     FaTwitter,
-    // FaInstagram,
     FaLinkedin,
-    // FaTelegram,
   } from "react-icons/fa";
 
 const MembersDetails = [
@@ -41,7 +39,7 @@ const TeamMembers = () => {
         <div className="w-[18vw] h-[55vh] border hover:shadow-lg">
             <div key={key} className="flex flex-col justify-center items-center gap-3">
                 <img src={item.Img} alt=""/>
-                <p className='text-textColor font-semibold'>// {item.pos} //</p>
+                <p className='text-textColor font-semibold'>{"//"} {item.pos} {"//"}</p>
                 <p className='text-lg font-bold hover:text-textColor cursor-pointer'>{item.name}</p>
                 <div className="flex gap-5">
                     <FaFacebook size={19} className='cursor-pointer hover:text-textColor'/>
