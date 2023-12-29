@@ -74,7 +74,7 @@ const FooterForAll = () => {
                 <ul className="flex flex-col gap-4 text-[17px] ">
                   <li className="hover:translate-x-6 group">
                     <span className="text-black group-hover:text-hoverTextColor">
-                      //{" "}
+                      {"//"}
                     </span>
                     <span className="cursor-pointer hover:text-hoverTextColor">
                       About
@@ -82,7 +82,7 @@ const FooterForAll = () => {
                   </li>
                   <li className="hover:translate-x-6 group">
                     <span className="text-black group-hover:text-hoverTextColor">
-                      //{" "}
+                      {"//"}
                     </span>
                     <span className="cursor-pointer hover:text-hoverTextColor">
                       Blog
@@ -90,7 +90,7 @@ const FooterForAll = () => {
                   </li>
                   <li className="hover:translate-x-6 group">
                     <span className="text-black group-hover:text-hoverTextColor">
-                      //{" "}
+                      {"//"}
                     </span>
                     <span className="cursor-pointer hover:text-hoverTextColor">
                       All Products
@@ -98,7 +98,7 @@ const FooterForAll = () => {
                   </li>
                   <li className="hover:translate-x-6 group">
                     <span className="text-black group-hover:text-hoverTextColor">
-                      //{" "}
+                      {"//"}
                     </span>
                     <span className="cursor-pointer hover:text-hoverTextColor">
                       Location Map
@@ -106,7 +106,7 @@ const FooterForAll = () => {
                   </li>
                   <li className="hover:translate-x-6 group">
                     <span className="text-black group-hover:text-hoverTextColor">
-                      //{" "}
+                      {"//"}
                     </span>
                     <span className="cursor-pointer hover:text-hoverTextColor">
                       FAQ
@@ -114,7 +114,7 @@ const FooterForAll = () => {
                   </li>
                   <li className="hover:translate-x-6 group">
                     <span className="text-black group-hover:text-hoverTextColor">
-                      //{" "}
+                      {"//"}
                     </span>
                     <span className="cursor-pointer hover:text-hoverTextColor">
                       Contact us
@@ -132,7 +132,7 @@ const FooterForAll = () => {
                 <ul className="flex flex-col gap-4 text-[17px]">
                   <li className="hover:translate-x-6 group">
                     <span className="text-black group-hover:text-hoverTextColor">
-                      //{" "}
+                    {"//"}
                     </span>
                     <span className="cursor-pointer hover:text-hoverTextColor">
                       Order tracking
@@ -140,7 +140,7 @@ const FooterForAll = () => {
                   </li>
                   <li className="hover:translate-x-6 group">
                     <span className="text-black group-hover:text-hoverTextColor">
-                      //{" "}
+                      {"//"}
                     </span>
                     <span className="cursor-pointer hover:text-hoverTextColor">
                       Wish List
@@ -148,7 +148,7 @@ const FooterForAll = () => {
                   </li>
                   <li className="hover:translate-x-6 group">
                     <span className="text-black group-hover:text-hoverTextColor">
-                      //{" "}
+                      {"//"}
                     </span>
                     <span className="cursor-pointer hover:text-hoverTextColor">
                       Login
@@ -156,7 +156,7 @@ const FooterForAll = () => {
                   </li>
                   <li className="hover:translate-x-6 group">
                     <span className="text-black group-hover:text-hoverTextColor">
-                      //{" "}
+                      {"//"}
                     </span>
                     <span className="cursor-pointer hover:text-hoverTextColor">
                       My Account
@@ -164,7 +164,7 @@ const FooterForAll = () => {
                   </li>
                   <li className="hover:translate-x-6 group">
                     <span className="text-black group-hover:text-hoverTextColor">
-                      //{" "}
+                      {"//"}
                     </span>
                     <span className="cursor-pointer hover:text-hoverTextColor">
                       Terms & Conditions
@@ -172,7 +172,7 @@ const FooterForAll = () => {
                   </li>
                   <li className="hover:translate-x-6 group">
                     <span className="text-black group-hover:text-hoverTextColor">
-                      //{" "}
+                      {"//"}
                     </span>
                     <span className="cursor-pointer hover:text-hoverTextColor">
                       Promotional Offers
@@ -190,7 +190,7 @@ const FooterForAll = () => {
                 <ul className="flex flex-col gap-4 text-[17px]">
                   <li className="hover:translate-x-6 group">
                     <span className="text-black group-hover:text-hoverTextColor">
-                      //{" "}
+                    {"//"}
                     </span>
                     <span className="cursor-pointer hover:text-hoverTextColor">
                       Login
@@ -198,7 +198,7 @@ const FooterForAll = () => {
                   </li>
                   <li className="hover:translate-x-6 group">
                     <span className="text-black group-hover:text-hoverTextColor">
-                      //{" "}
+                    {"//"}
                     </span>
                     <span className="cursor-pointer hover:text-hoverTextColor">
                       My Account
@@ -206,7 +206,7 @@ const FooterForAll = () => {
                   </li>
                   <li className="hover:translate-x-6 group">
                     <span className="text-black group-hover:text-hoverTextColor">
-                      //{" "}
+                    {"//"}
                     </span>
                     <span className="cursor-pointer hover:text-hoverTextColor">
                       Wish List
@@ -214,7 +214,7 @@ const FooterForAll = () => {
                   </li>
                   <li className="hover:translate-x-6 group">
                     <span className="text-black group-hover:text-hoverTextColor">
-                      //{" "}
+                    {"//"}
                     </span>
                     <span className="cursor-pointer hover:text-hoverTextColor">
                       Order tracking
@@ -222,7 +222,7 @@ const FooterForAll = () => {
                   </li>
                   <li className="hover:translate-x-6 group">
                     <span className="text-black group-hover:text-hoverTextColor">
-                      //{" "}
+                    {"//"}
                     </span>
                     <span className="cursor-pointer hover:text-hoverTextColor">
                       FAQ
@@ -230,7 +230,7 @@ const FooterForAll = () => {
                   </li>
                   <li className="hover:translate-x-6 group">
                     <span className="text-black group-hover:text-hoverTextColor">
-                      //{" "}
+                      {"//"}
                     </span>
                     <span className="cursor-pointer hover:text-hoverTextColor">
                       Contact us
