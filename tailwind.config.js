@@ -16,7 +16,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        thirdsectionImg: "url('/images/thirdsection-img.jpg')",
+        // thirdsectionImg: "url('/images/thirdsection-img.jpg')",
       },
 
       fontFamily: {
