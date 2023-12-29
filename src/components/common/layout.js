@@ -3,6 +3,7 @@ import { useThemeContext } from "../context/theme-context";
 import TopHeader from "./top-header";
 import Header from "./header";
 import { Outlet, useLocation } from "react-router-dom";
+import Breadcrumb from "./breadcrumb";
 
 const Layout = () => {
   const { theme } = useThemeContext();
@@ -11,6 +12,7 @@ const Layout = () => {
   const isHomePage = location.pathname === "/";
   const isAboutPage = location.pathname === "/about";
   const isShopPage = location.pathname === "/shop";
+  const isCartPage = location.pathname === "/cart";
 
   return (
     <div className={`${theme}`}>
@@ -30,28 +32,9 @@ const Layout = () => {
         <div className="w-[100vw] h-[30px]"></div>
         <Header isHomePage={isHomePage} />
 
-        {/* AboutPage */}
-        <div className={`${isAboutPage ? "visible absolute bottom-[100px] left-[100px] container mx-auto h-[30px] text-white px-[80px] flex justify-between items-center" : "invisible h-[0px]"}`}>
-          <div className="">
-            <p className="text-textColor font-semibold">// WELCOME TO OUR COMPANY</p>
-            <p className="text-[55px] font-bold">About Us</p>
-          </div>
-          <div className="">
-            <p><a href="/" className="font-bold">Home</a> | <a href="/about" className="text-textColor font-bold">About Us</a></p>
-          </div>
-        </div>
-
-        {/* ShopPage */}
-        <div className={`${isShopPage ? "visible absolute bottom-[100px] left-[100px] container mx-auto h-[30px] text-white px-[80px] flex justify-between items-center" : "invisible h-[0px]"}`}>
-          <div className="">
-            <p className="text-textColor font-semibold">// WELCOME TO OUR COMPANY</p>
-            <p className="text-[55px] font-bold">Product Details</p>
-          </div>
-          <div className="">
-            <p><a href="/" className="font-bold">Home</a> | <a href="/about" className="text-textColor font-bold">Product Details</a></p>
-          </div>
-        </div>
-
+        {isShopPage ? <Breadcrumb title={"Product Details"} pageName={"Shop"} /> : null}
+        {isAboutPage ? <Breadcrumb title={"About Us"} pageName={"About"}/> : null}
+        {isCartPage ? <Breadcrumb title={"Shopping Bag"} pageName={"Cart"}/> : null}
         
         <div
           className={`${

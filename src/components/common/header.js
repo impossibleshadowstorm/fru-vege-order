@@ -30,6 +30,9 @@ const Header = ({ isHomePage }) => {
             <NavLink to="/shop" className="font-medium hover:text-textColor md:pr-3 pr-0">
               Shop
             </NavLink>
+            <NavLink to="/cart" className="font-medium hover:text-textColor md:pr-3 pr-0">
+              Cart
+            </NavLink>
             <NavLink to="/pages" className="font-medium hover:text-textColor md:pr-3 pr-0">
               Pages
             </NavLink>
