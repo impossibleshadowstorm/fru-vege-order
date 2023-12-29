@@ -8,7 +8,8 @@ const Header = ({ isHomePage }) => {
       <div className="flex md:flex-row flex-col md:gap-0 md:gap-5 gap-3 justify-between md:pl-9 md:pr-14 md:mr-6 mr-3 items-center md:w-[90vw] w-[95vw] md:p-0 p-3">
         <div className="">
           <img
-            src="/images/logo.png"
+            // src="/images/logo.png"
+            src={`${isHomePage ? "/images/logo.png" : "/images/logo-2.png"}`}
             alt="logo"
             className="filter contrast-75"
           />

@@ -46,4 +46,4 @@ const DeliveryMode = () => {
   )
 }
 
-export default DeliveryMode
+export default DeliveryMode;

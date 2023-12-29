@@ -18,7 +18,7 @@ const FooterForAll = () => {
           {/* contact */}
           <div className="w-[20vw]  flex flex-col gap-6 h-[46vh] text-[17px] ml-5">
             <img
-              src="/images/logo.png"
+              src="/images/logo-2.png"
               alt="logo"
               className="filter contrast-75 w-[190px] h-[50px]"
             />
