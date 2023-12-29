@@ -7,7 +7,6 @@ import {
   FaTwitter,
   FaInstagram,
   FaTelegram,
-  // FaArrowDown,
 } from "react-icons/fa";
 
 const TopHeader = () => {

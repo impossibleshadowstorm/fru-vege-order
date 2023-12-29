@@ -3,8 +3,6 @@ import { useState } from "react";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 
-// import motion from 'framer-motion';
-
 const counterUpData = [
   {
     name: "Active Client",

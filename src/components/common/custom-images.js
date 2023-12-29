@@ -1,5 +1,5 @@
 import React from "react";
-import { imageLoader } from "../../utils/helpers"; // Adjust the import path based on your project structure
+import { imageLoader } from "../../utils/helpers"; 
 
 const CustomImage = ({ src, alt, className }) => {
   const imageUrl = imageLoader({ src });

@@ -66,8 +66,7 @@ function SampleNextArrow(props) {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0 }}
-      className="md:block md:bg-[white] rounded rounded-full border-solid border-2 border-gray-300 absolute top-[270px] -right-[71px] p-4 hover:bg-headerCtaButtonBg hover:text-white"
-      // style={{ ...style}}
+      className="md:block md:bg-[white] rounded-full border-solid border-2 border-gray-300 absolute top-[270px] -right-[71px] p-4 hover:bg-headerCtaButtonBg hover:text-white"
       onClick={onClick}
     >
       <FaArrowRight className="text-lg hover:text-[white]" />
@@ -83,7 +82,7 @@ function SamplePrevArrow(props) {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0 }}
-      className="md:block md:bg-[white] rounded rounded-full border-solid border-2 border-gray-300 absolute top-[270px] -left-[71px] p-4 hover:bg-headerCtaButtonBg hover:text-white"
+      className="md:block md:bg-[white] rounded-full border-solid border-2 border-gray-300 absolute top-[270px] -left-[71px] p-4 hover:bg-headerCtaButtonBg hover:text-white"
       onClick={onClick}
     >
       <FaArrowLeft className="text-lg hover:text-[white]" />
@@ -129,7 +128,7 @@ const BlogSection = () => {
   };
   return (
     <div className="py-5">
-      <p className="text-[white] text-center text-6xl font-bold pt-[100px] text-black">
+      <p className="text-center text-6xl font-bold pt-[100px] text-black">
         Leatest Blog
       </p>
       <div className="container mx-auto gap-9 mt-1 relative h-[80vh] w-[73rem]">
@@ -142,7 +141,11 @@ const BlogSection = () => {
               {/* <div className="flex flex-col justify-center items-center gap-4 pt-12 object-cover"> */}
 
               <div className="overflow-hidden">
-                <img src={item.imgUrl} alt="" className="w-[405px] h-[240px] scale-100 hover:scale-125 hover:duration-1000 hover:ease-in-out hover:transition" />
+                <img
+                  src={item.imgUrl}
+                  alt=""
+                  className="w-[405px] h-[240px] scale-100 hover:scale-125 hover:duration-1000 hover:ease-in-out hover:transition"
+                />
               </div>
               <div className="container mx-auto w-[350px] flex flex-col gap-5 py-5 ">
                 <div className="flex gap-7 ">
@@ -156,9 +159,7 @@ const BlogSection = () => {
                   </div>
                 </div>
                 <div className="">
-                  <h3 className="text-2xl font-bold">
-                    {item.name}
-                  </h3>
+                  <h3 className="text-2xl font-bold">{item.name}</h3>
                 </div>
                 <hr />
                 <div className="flex justify-between">
@@ -178,30 +179,6 @@ const BlogSection = () => {
         </Slider>
       </div>
     </div>
-
-    // <div className="bg-landingSecBg md:h-[96vh] h-[100vh] md:px-0 my-12">
-    // <Slider {...settings}>
-    // {categoryData.map((item, key) => (
-    // <div key={key} className="max-w-[270px] h-[50vh] rounded overflow-hidden shadow-md border hover:shadow-2xl md:my-5">
-
-    //   <div className="relative">
-    //     <img className="w-[300px] h-[240px]" src={item.imgUrl} alt="Apple" />
-
-    //     {/* <div className="text-[white] absolute right-4 top-3 h-[4vh] bg-[#80B500] text-center px-4 rounded-b-lg rounded-r-md shadow-md hover:shadow-xl border">
-    //       -{discountPercent} %
-    //     </div> */}
-    //   </div>
-    //   <div className="px-6 py-4 text-center">
-
-    //     {/* <p className="text-base font-bold text-[#80B500]">{name}</p> */}
-    //     {/* <div className="flex gap-3 justify-center text-[#80B500] font-semibold">
-
-    //     </div> */}
-    //   </div>
-    // </div>
-    // ))}
-    // </Slider>
-    // </div>
   );
 };
 

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
-// import { motion } from "framer-motion";
 import { FaRegEye, FaShoppingCart,FaRegHeart } from "react-icons/fa";
 
 const SingleProductCard = ({
@@ -24,13 +23,13 @@ const SingleProductCard = ({
 
         {isShown && (
         <div className="flex flex-row justify-center items-center gap-2">
-        <div className="absolute bottom-20 right-16 md:block md:bg-[white] rounded rounded-full p-3 hover:text-white hover:bg-headerCtaButtonBg">
+        <div className="absolute bottom-20 right-16 md:block md:bg-[white] rounded-full p-3 hover:text-white hover:bg-headerCtaButtonBg">
           <FaRegHeart size={16} /> 
         </div>
-        <div className="absolute bottom-20 right-28 md:block md:bg-[white] rounded rounded-full p-3 hover:text-white hover:bg-headerCtaButtonBg">
+        <div className="absolute bottom-20 right-28 md:block md:bg-[white] rounded-full p-3 hover:text-white hover:bg-headerCtaButtonBg">
         <FaShoppingCart size={16} />
         </div>
-        <div className="absolute bottom-20 right-40 md:block md:bg-[white] rounded rounded-full p-3 hover:text-white hover:bg-headerCtaButtonBg">
+        <div className="absolute bottom-20 right-40 md:block md:bg-[white] rounded-full p-3 hover:text-white hover:bg-headerCtaButtonBg">
         <FaRegEye size={16} /> 
         </div>
         </div>

@@ -1,8 +1,5 @@
 import React from "react";
-// import CardSection from "./card-section";
 import SingleProductCard from "../product/single-product-card";
-
-// import SingleProductCard from "../product/single-product-card";
 
 const data = [
   {

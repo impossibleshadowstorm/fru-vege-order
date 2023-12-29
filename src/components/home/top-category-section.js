@@ -31,48 +31,30 @@ const nextArrow = {
 
 
 const boxDiv = {
-  // hidden: { opacity: 0, x: "-1vw" },
   hidden: {
     width: 0,
-    opacity: 0, // Start with zero width
+    opacity: 0,
   },
-  // show: {
-  //   opacity: 1,
-  //   x: "0",
-  //   transition: {
-  //     type: "spring",
-  //     delay: 0.2,
-  //   },
-  // },
   show: {
     opacity: 1,
-    width: "100%", // Expand to full width
+    width: "100%",
     transition: {
-      duration: 0.5, // Set the duration of the animation
+      duration: 0.5,
     },
   },
 };
 const barDiv = {
   hidden: {
     width: 0,
-    opacity: 0, // Start with zero width
+    opacity: 0,
   },
   show: {
     opacity: 1,
-    width: "100%", // Expand to full width
+    width: "100%",
     transition: {
-      duration: 0.5, // Set the duration of the animation
+      duration: 0.5,
     },
   },
-  // hidden: { opacity: 0, x: "-1vw" },
-  // show: {
-  //   opacity: 1,
-  //   x: "0",
-  //   transition: {
-  //     type: "spring",
-  //     delay: 0.2,
-  //   },
-  // },
 };
 
 const categoryData = [
@@ -117,8 +99,7 @@ function SampleNextArrow(props) {
     whileInView="show"
     viewport={{once:false, amount:0}}
 
-       className= "md:block md:bg-[white] rounded rounded-full absolute top-[110px] -right-[71px] p-4 hover:bg-headerCtaButtonBg hover:text-white"
-      // style={{ ...style}}
+       className= "md:block md:bg-[white] rounded absolute top-[110px] -right-[71px] p-4 hover:bg-headerCtaButtonBg hover:text-white"
       onClick={onClick}
     >
       <FaArrowRight className="text-lg hover:text-[white]"/>
@@ -135,7 +116,7 @@ function SamplePrevArrow(props) {
     whileInView="show"
     viewport={{once:false, amount:0}}
 
-      className= "md:block md:bg-[white] rounded rounded-full absolute top-[110px] -left-[71px] p-4 hover:bg-headerCtaButtonBg hover:text-white"
+      className= "md:block md:bg-[white] rounded absolute top-[110px] -left-[71px] p-4 hover:bg-headerCtaButtonBg hover:text-white"
       onClick={onClick}
     >
       <FaArrowLeft className="text-lg hover:text-[white]"/>
@@ -196,8 +177,6 @@ const TopSection = () => {
               <motion.div
               key={key}
                 variants={boxDiv}
-                // initial="hidden"
-                // whileHover="show"
                 className="group lg:h-[37vh] h-[50vh] bg-[white] border border-y border-gray-1000 relative"
               >
                 <div className="flex flex-col justify-center items-center gap-4 pt-12">
@@ -215,10 +194,7 @@ const TopSection = () => {
                   variants={barDiv}
                   initial="hidden"
                   whileHover="show"
-                  //  whileInView="show"
-                  //  viewport={{once:false, amount:0.4}}
-
-                  className="w-[18.2vw] border border-2 border-[#80B500] absolute bottom-0"
+                  className="w-[18.2vw] border-2 border-[#80B500] absolute bottom-0"
                 ></motion.div>
               </motion.div>
             ))}
