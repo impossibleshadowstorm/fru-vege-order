@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
+import RLTRAnimatedBtn from "../../common/btnComponent/rltr-animated-btn";
 
 const Subscribe = () => {
   return (
@@ -11,29 +11,16 @@ const Subscribe = () => {
           <br />
           exclusive access to pre-launch product pricing and more.
         </p>
-        <div className="pt-2">
+        <div className="mt-5 flex justify-center items-center bg-[green]">
           <input
             type="email"
             placeholder="Email*"
-            className="w-[37vw] h-[8vh] placeholder:pl-4"
+            className="w-[37vw] h-[6vh] placeholder:pl-2 text-black pl-5"
           />
-          {/* <button type="button" className="bg-headerCtaButtonBg text-white h-[8vh] w-[160px]">SUBSCRIBE</button> */}
-          <motion.button
-            type="button"
-            initial={{ opacity: 0, backgroundColor: "[#80B500]" }}
-            animate={{ y: 0.2, opacity: 1 }}
-            transition={{
-              scale: { type: "spring", stiffness: 300 },
-              duration: 1.5,
-            }}
-            // className="bg-headerCtaButtonBg text-white h-[52px] w-[198px] font-medium"
-            className="relative bg-headerCtaButtonBg w-[160px] h-[60px] font-medium text-white transition-colors 
-            before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left 
-            before:scale-x-0 before:bg-white before:transition-transform before:duration-300 before:content-[''] 
-            hover:text-black hover:border hover:border-2 before:hover:scale-x-100"
-          >
-            SUBSCRIBE
-          </motion.button>
+
+          <div className="bg-white ">
+            <RLTRAnimatedBtn name={"SUBSCRIBE"} />
+          </div>
         </div>
       </div>
     </div>

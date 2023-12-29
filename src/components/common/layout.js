@@ -41,7 +41,6 @@ const Layout = () => {
             isHomePage ? "w-[100vw] h-[30px]" : "w-[100vw] h-[400px]"
           }`}
         ></div>
-        {/* {isAboutPage ? } */}
       </div>
       <div>{<Outlet />}</div>
     </div>
