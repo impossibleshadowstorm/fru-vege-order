@@ -3,6 +3,7 @@ import "./App.css";
 import { useThemeContext } from "./components/context/theme-context";
 import Home from "./pages/home";
 import Shop from "./pages/shop";
+import Cart from "./pages/cart";
 import About from "./pages/about";
 import Pages from "./pages/pages";
 import Contact from "./pages/contact";
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: "/shop",
         element: <Shop />,
+      },
+      {
+        path: "/cart",
+        element: <Cart />,
       },
       {
         path: "/pages",
