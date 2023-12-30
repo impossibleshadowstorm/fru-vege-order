@@ -5,10 +5,11 @@ import Home from "./pages/home";
 import Shop from "./pages/shop";
 import Cart from "./pages/cart";
 import About from "./pages/about";
-import Pages from "./pages/pages";
 import Contact from "./pages/contact";
 import { useEffect } from "react";
 import Layout from "./components/common/layout";
+import Login from "./pages/auth/login";
+import Register from "./pages/auth/register";
 
 const router = createBrowserRouter([
   {
@@ -32,8 +33,17 @@ const router = createBrowserRouter([
         element: <Cart />,
       },
       {
-        path: "/pages",
-        element: <Pages />,
+        path: "/auth",
+        children: [
+          {
+            index: true,
+            element: <Login />,
+          },
+          {
+            path: "/auth/register",
+            element: <Register />,
+          },
+        ],
       },
       {
         path: "/contact",

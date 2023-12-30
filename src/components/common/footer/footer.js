@@ -10,7 +10,7 @@ import {
   FaLocationArrow,
 } from "react-icons/fa";
 
-const FooterForAll = () => {
+const Footer = () => {
   return (
     <div className="">
       <div className="h-[70vh] w-[100vw] text-white bg-black mt-[100px] ">
@@ -291,4 +291,4 @@ const FooterForAll = () => {
   );
 };
 
-export default FooterForAll;
+export default Footer;
