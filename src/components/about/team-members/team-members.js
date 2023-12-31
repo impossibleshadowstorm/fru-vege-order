@@ -1,32 +1,33 @@
 import React from 'react'
+import alldata from "../../../utils/consts.js"
 import {
     FaFacebook,
     FaTwitter,
     FaLinkedin,
   } from "react-icons/fa";
 
-const MembersDetails = [
-    {
-        name : "Sumit Saurabh",
-        Img : "/images/about/member1.jpg",
-        pos : "Founder",
-    },
-    {
-        name : "Sumit Saurabh",
-        Img : "/images/about/member2.jpg",
-        pos : "Founder",
-    },
-    {
-        name : "Sumit Saurabh",
-        Img : "/images/about/member3.jpg",
-        pos : "Founder",
-    },
-    {
-        name : "Sumit Saurabh",
-        Img : "/images/about/member4.jpg",
-        pos : "Founder",
-    },
-];
+// const MembersDetails = [
+//     {
+//         name : "Sumit Saurabh",
+//         Img : "/images/about/member1.jpg",
+//         pos : "Founder",
+//     },
+//     {
+//         name : "Sumit Saurabh",
+//         Img : "/images/about/member2.jpg",
+//         pos : "Founder",
+//     },
+//     {
+//         name : "Sumit Saurabh",
+//         Img : "/images/about/member3.jpg",
+//         pos : "Founder",
+//     },
+//     {
+//         name : "Sumit Saurabh",
+//         Img : "/images/about/member4.jpg",
+//         pos : "Founder",
+//     },
+// ];
 
 const TeamMembers = () => {
   return (
@@ -35,10 +36,10 @@ const TeamMembers = () => {
         <p className='text-[60px] font-bold'>Team Member</p>
       </div>
       <div className="flex gap-4 justify-center">
-         {MembersDetails.map((item , key)=> (
+         {alldata.MembersDetails.map((item , key)=> (
         <div className="w-[18vw] h-[55vh] border hover:shadow-lg">
             <div key={key} className="flex flex-col justify-center items-center gap-3">
-                <img src={item.Img} alt=""/>
+                <img src={item.Imgurl} alt=""/>
                 <p className='text-textColor font-semibold'>{"//"} {item.pos} {"//"}</p>
                 <p className='text-lg font-bold hover:text-textColor cursor-pointer'>{item.name}</p>
                 <div className="flex gap-5">

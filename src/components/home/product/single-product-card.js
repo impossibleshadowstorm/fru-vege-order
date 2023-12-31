@@ -59,7 +59,7 @@ const SingleProductCard = ({
             <li className="text-textColor">(24)</li>
           </ul>
         </div>
-        <p className="text-base font-bold text-textColor">{name}</p>
+        <p className="text-base font-bold">{name}</p>
         <div className="flex gap-3 justify-center text-textColor font-semibold">
           <span>${discountedPrice}</span>
           <span className="line-through">${originalPrice}</span>

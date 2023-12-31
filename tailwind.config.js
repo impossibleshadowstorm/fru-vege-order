@@ -37,7 +37,7 @@ module.exports = {
         starColor: "var(--star-text-color)",
       },
       borderColor: {
-        homeBorder: "var(--home-header-bg)",
+        homeBorder: "var(--border-color)",
         otherBorder: "var(--other-header-bg)",
       },
       bgImages: {
