@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { FaSearch, FaUserAlt, FaCartPlus } from "react-icons/fa";
+import CtaBtn from "./btnComponent/cta-btn";
 
 const Header = ({ isHomePage }) => {
   return (
@@ -39,12 +40,7 @@ const Header = ({ isHomePage }) => {
               Contact
             </NavLink>
           </div>
-          <button
-            type="button"
-            className="bg-headerCtaButtonBg text-white h-[52px] w-[138px] font-medium text-sm hover:bg-[#65a30d]"
-          >
-            GET A QUOTE
-          </button>
+         <CtaBtn name={"GET A QUOTE"}/>
           <div className="flex gap-3">
             <div className="flex justify-center items-center bg-white text-black border-red-100 w-[50px] h-[52px] hover:text-white hover:bg-headerCtaButtonBg">
               <FaSearch size={19}></FaSearch>

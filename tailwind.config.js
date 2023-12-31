@@ -26,6 +26,7 @@ module.exports = {
         homeHeaderBg: "var(--home-header-bg)",
         otherHeaderBg: "var(--other-header-bg)",
         headerCtaButtonBg: "var(--header-cta-button-bg)",
+        hoverHeaderCtaButtonBg: "var(--hover-header-cta-button-bg)",
         landingSecBg: "var(--landing-sec-bg)",
       },
       textColor: {
@@ -39,6 +40,9 @@ module.exports = {
       borderColor: {
         homeBorder: "var(--home-header-bg)",
         otherBorder: "var(--other-header-bg)",
+      },
+      outlineColor: {
+        greenBorder: "var(--input-outline-color)",
       },
       bgImages: {
         // backgroundImg: "var(--backgroundimg)",
