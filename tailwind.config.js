@@ -15,10 +15,6 @@ module.exports = {
       xl: "1300px",
     },
     extend: {
-      backgroundImage: {
-        // thirdsectionImg: "url('/images/thirdsection-img.jpg')",
-      },
-
       fontFamily: {
         rajdhani: ["Rajdhani"],
       },
@@ -43,9 +39,6 @@ module.exports = {
       },
       outlineColor: {
         greenBorder: "var(--input-outline-color)",
-      },
-      bgImages: {
-        // backgroundImg: "var(--backgroundimg)",
       },
     },
   },
