@@ -15,10 +15,6 @@ module.exports = {
       xl: "1300px",
     },
     extend: {
-      backgroundImage: {
-        // thirdsectionImg: "url('/images/thirdsection-img.jpg')",
-      },
-
       fontFamily: {
         rajdhani: ["Rajdhani"],
       },
@@ -39,9 +35,6 @@ module.exports = {
       borderColor: {
         homeBorder: "var(--home-header-bg)",
         otherBorder: "var(--other-header-bg)",
-      },
-      bgImages: {
-        // backgroundImg: "var(--backgroundimg)",
       },
     },
   },
