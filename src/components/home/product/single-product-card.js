@@ -17,7 +17,7 @@ const SingleProductCard = ({
     onMouseEnter={() => setIsShown(true)}
     onMouseLeave={() => setIsShown(false)}
 
-     className="max-w-[280px] h-[50vh] rounded overflow-hidden shadow-md border hover:shadow-2xl md:my-5">
+     className="max-w-[280px] h-[50vh] rounded overflow-hidden shadow-sm border hover:shadow-md md:my-5">
       <div className="relative">
         <img className="w-[300px] h-[240px]" src={imageUrl} alt="Apple" />
 

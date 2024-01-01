@@ -2,14 +2,15 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./App.css";
 import { useThemeContext } from "./components/context/theme-context";
 import Home from "./pages/home";
-import Shop from "./pages/shop";
 import Cart from "./pages/cart";
 import About from "./pages/about";
+import Shop from "./pages/shop";
 import Contact from "./pages/contact";
 import { useEffect } from "react";
 import Layout from "./components/common/layout";
 import Login from "./pages/auth/login";
 import Register from "./pages/auth/register";
+import ProductDetail from "./pages/product-detail";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: "/shop",
         element: <Shop />,
+      },
+      {
+        path: "/product/:id/",
+        element: <ProductDetail />,
       },
       {
         path: "/cart",

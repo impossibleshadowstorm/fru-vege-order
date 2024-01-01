@@ -1,8 +1,7 @@
 import React from "react";
 import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
 import data from "../../../utils/consts.js";
-import AddReview from "./add-review.js";
-import RelatedProduct from "./related-product.js";
+import ReviewForm from "./review-form.js";
  
 
 const ReviewOfProduct = () => {
@@ -85,11 +84,8 @@ const ReviewOfProduct = () => {
         {/* add review */}
 
         <div className="mt-[90px] bg-[#F0F4F7]">
-          <AddReview />
+          <ReviewForm />
         </div>
-      </div>
-      <div className="my-[90px] w-[80vw]">
-        <RelatedProduct />
       </div>
     </div>
   );

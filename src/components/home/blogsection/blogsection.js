@@ -129,7 +129,7 @@ const BlogSection = () => {
   return (
     <div className="py-5">
       <p className="text-center text-6xl font-bold pt-[100px] text-black">
-        Leatest Blog
+        Latest Blog
       </p>
       <div className="container mx-auto gap-9 mt-1 relative h-[80vh] w-[73rem]">
         <Slider {...settings}>

@@ -1,5 +1,5 @@
 import React from "react";
-import LTRAnimatedBtn from "../common/btnComponent/ltr-animated-btn";
+import RLTRAnimatedBtn from "../common/btnComponent/rltr-animated-btn";
 
 const CartTotal = () => {
   return (
@@ -33,7 +33,7 @@ const CartTotal = () => {
             </tbody>
           </table>
         </div>
-        <LTRAnimatedBtn name="Proceed To Checkout" customPadding="w-[100%] "  />
+        <RLTRAnimatedBtn name="Proceed To Checkout" customClass={" w-[100%] px-6 py-4 my-1"} />
       </div>
     </div>
   );

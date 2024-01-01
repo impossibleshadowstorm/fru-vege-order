@@ -100,6 +100,34 @@ const featuredata = [
 ];
 
 
-const alldata = { FILTER_PRODUCTS, MembersDetails, featuredata };
+const categoryData = [
+  {
+    id: 0,
+    imgUrl: "/images/shopProduct/1.png",
+    name: "Mixel Solid Seat Cover",
+  },
+  {
+    id: 1,
+    imgUrl: "/images/shopProduct/2.png",
+    name: "Vegetables Juices",
+  },
+  {
+    id: 2,
+    imgUrl: "/images/shopProduct/3.png",
+    name: "Coil Spring Conversion",
+  },
+  {
+    id: 3,
+    imgUrl: "/images/shopProduct/4.png",
+    name: "Coil Spring Conversion",
+  },
+  {
+    id: 4,
+    imgUrl: "/images/shopProduct/2.png",
+    name: "Coil Spring Conversion",
+  },
+];
+
+const alldata = { FILTER_PRODUCTS, MembersDetails, featuredata, categoryData };
 
 export default alldata;

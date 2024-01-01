@@ -51,7 +51,7 @@ const CartSingleItem = () => {
             className="cart-plus-minus-box  h-16 w-14 text-center bg-transparent border-x-2"
           ></input>
           <div
-            className="inc qtybutton h-16 w-10  cursor-pointer items-center flex justify-center text-xl"
+            className="inc qtybutton h-16 w-10 cursor-pointer items-center flex justify-center text-xl"
             onClick={increaseItem}
           >
             +

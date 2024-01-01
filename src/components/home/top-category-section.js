@@ -99,7 +99,7 @@ function SampleNextArrow(props) {
     whileInView="show"
     viewport={{once:false, amount:0}}
 
-       className= "md:block md:bg-[white] rounded absolute top-[110px] -right-[71px] p-4 hover:bg-headerCtaButtonBg hover:text-white"
+       className= "md:block md:bg-[white] rounded-full absolute top-[110px] -right-[71px] p-4 hover:bg-headerCtaButtonBg hover:text-white"
       onClick={onClick}
     >
       <FaArrowRight className="text-lg hover:text-[white]"/>
@@ -116,7 +116,7 @@ function SamplePrevArrow(props) {
     whileInView="show"
     viewport={{once:false, amount:0}}
 
-      className= "md:block md:bg-[white] rounded absolute top-[110px] -left-[71px] p-4 hover:bg-headerCtaButtonBg hover:text-white"
+      className= "md:block md:bg-[white] rounded-full absolute top-[110px] -left-[71px] p-4 hover:bg-headerCtaButtonBg hover:text-white"
       onClick={onClick}
     >
       <FaArrowLeft className="text-lg hover:text-[white]"/>
@@ -128,7 +128,7 @@ const TopSection = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 100,
+    speed: 400,
     slidesToShow: 4,
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,

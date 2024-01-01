@@ -101,10 +101,10 @@ const RelatedProduct = () => {
   };
 
   return (
-    <div>
-      <p className="text-[45px] font-bold">RelatedProduct</p>
+    <div className="container mx-auto px-[60px] w-[100vw]">
+      <p className="text-[45px] font-bold">Related Product</p>
 
-      <div className="pt-5">
+      <div className="pt-5 pb-[90px]">
         <Slider {...settings}>
           {data.featuredata.map((item, index) => (
             <SingleProductCard
