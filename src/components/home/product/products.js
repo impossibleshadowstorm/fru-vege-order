@@ -35,74 +35,74 @@ const data = {
     {
       name: "Cake with Juice",
       items: 45,
-      imgUrl: "/images/home/product/food-drinks/1.webp",
+      imgUrl: "/images/bocali pic/6.png",
       
     },
     {
       name: "Juice",
       items: 45,
-      imgUrl: "/images/home/product/food-drinks/2.webp",
+      imgUrl: "/images/bocali pic/9.png",
     },
     {
       name: "Ice-Drinks",
       items: 15,
-      imgUrl: "/images/home/product/food-drinks/3.webp",
+      imgUrl: "/images/bocali pic/12.png",
     },
     {
       name: "Cold-Juice",
       items: 15,
-      imgUrl: "/images/home/product/food-drinks/4.webp",
+      imgUrl: "/images/bocali pic/14.png",
     },
     {
       name: "Beer-Ice",
       items: 85,
-      imgUrl: "/images/home/product/food-drinks/5.webp",
+      imgUrl: "/images/bocali pic/7.png",
     },
     {
       name: "Ice-Drinks",
       items: 85,
-      imgUrl: "/images/home/product/food-drinks/6.webp",
+      imgUrl: "/images/bocali pic/6.png",
     },
 
     {
       name: "Fruit-Juice",
       items: 45,
-      imgUrl: "/images/home/product/food-drinks/7.webp",
+      imgUrl: "/images/bocali pic/9.png",
     },
     {
       name: "Beer-Ice",
       items: 15,
-      imgUrl: "/images/home/product/food-drinks/8.webp",
+      imgUrl: "/images/bocali pic/8.png",
     },
     {
       name: "Cold-Juice",
       items: 15,
-      imgUrl: "/images/home/product/food-drinks/9.webp",
+      imgUrl: "/images/bocali pic/tomato.png",
     },
     {
       name: "Cold-Juice",
       items: 85,
-      imgUrl: "/images/home/product/food-drinks/10.webp",
+      imgUrl: "/images/bocali pic/15.png",
     },
     {
       name: "Beer-Ice",
       items: 85,
-      imgUrl: "/images/home/product/food-drinks/6.webp",
+      imgUrl: "/images/bocali pic/12.png",
     },
     {
       name: "Fruit-Juice",
       items: 45,
-      imgUrl: "/images/home/product/food-drinks/4.webp",
+      imgUrl: "/images/bocali pic/8.png",
     },
     {
       name: "Beer-Ice",
       items: 15,
-      imgUrl: "/images/home/product/food-drinks/3.webp",
+      imgUrl: "/images/bocali pic/6.png",
     },
     {
       name: "Cold-Juice",
       items: 15,
-      imgUrl: "/images/home/product/food-drinks/7.webp",
+      imgUrl: "/images/bocali pic/10.png",
     },
   ],
   vegetables: [

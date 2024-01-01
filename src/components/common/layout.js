@@ -11,8 +11,11 @@ const Layout = () => {
 
   const isHomePage = location.pathname === "/";
   const isAboutPage = location.pathname === "/about";
-  const isShopPage = location.pathname === "/shop";
+  const isProductDetails = location.pathname === "/product/:id/";
+  const isShop = location.pathname === "/shop";
   const isCartPage = location.pathname === "/cart";
+  const isLoginPage = location.pathname === "/auth";
+  const isRegisterPage = location.pathname === "/auth/register";
 
   return (
     <div className={`${theme}`}>
@@ -32,9 +35,12 @@ const Layout = () => {
         <div className="w-[100vw] h-[30px]"></div>
         <Header isHomePage={isHomePage} />
 
-        {isShopPage ? <Breadcrumb title={"Product Details"} pageName={"Shop"} /> : null}
+        {isShop ? <Breadcrumb title={"Shop"} pageName={"Shop"} /> : null}
+        {isProductDetails ? <Breadcrumb title={"Product Details"} pageName={"ProductDetail"} /> : null}
         {isAboutPage ? <Breadcrumb title={"About Us"} pageName={"About"}/> : null}
         {isCartPage ? <Breadcrumb title={"Shopping Bag"} pageName={"Cart"}/> : null}
+        {isLoginPage ? <Breadcrumb title={"Account"} pageName={"Login"}/> : null}
+        {isRegisterPage ? <Breadcrumb title={"Account"} pageName={"Register"}/> : null}
         
         <div
           className={`${

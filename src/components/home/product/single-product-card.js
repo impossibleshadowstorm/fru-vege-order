@@ -17,7 +17,7 @@ const SingleProductCard = ({
     onMouseEnter={() => setIsShown(true)}
     onMouseLeave={() => setIsShown(false)}
 
-     className="max-w-[280px] h-[50vh] rounded overflow-hidden shadow-md border hover:shadow-2xl md:my-5">
+     className="max-w-[280px] h-[50vh] rounded overflow-hidden shadow-sm border hover:shadow-md md:my-5">
       <div className="relative">
         <img className="w-[300px] h-[240px]" src={imageUrl} alt="Apple" />
 
@@ -59,7 +59,7 @@ const SingleProductCard = ({
             <li className="text-textColor">(24)</li>
           </ul>
         </div>
-        <p className="text-base font-bold text-textColor">{name}</p>
+        <p className="text-base font-bold">{name}</p>
         <div className="flex gap-3 justify-center text-textColor font-semibold">
           <span>${discountedPrice}</span>
           <span className="line-through">${originalPrice}</span>

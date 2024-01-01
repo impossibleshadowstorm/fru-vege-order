@@ -1,4 +1,6 @@
 import React from "react";
+import SingleProductCard from "../../home/product/single-product-card";
+import data from "../../../utils/consts.js";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -29,24 +31,6 @@ const nextArrow = {
   },
 };
 
-const categoryData = [
-  {
-    imgUrl: "./images/shopProduct/1.png",
-  },
-  {
-    imgUrl: "./images/shopProduct/2.png",
-  },
-  {
-    imgUrl: "./images/shopProduct/3.png",
-  },
-  {
-    imgUrl: "./images/shopProduct/4.png",
-  },
-  {
-    imgUrl: "./images/shopProduct/2.png",
-  },
-];
-
 function SampleNextArrow(props) {
   const { onClick } = props;
   return (
@@ -55,8 +39,7 @@ function SampleNextArrow(props) {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0 }}
-      className="md:block md:bg-[white] rounded rounded-full border-solid border-2 border-gray-300 absolute top-[270px] -right-[71px] p-4 hover:bg-headerCtaButtonBg hover:text-white"
-      // style={{ ...style}}
+      className="md:block md:bg-[white] rounded-full border-solid border-2 border-gray-300 absolute top-[180px] -right-[71px] p-4 hover:bg-headerCtaButtonBg hover:text-white"
       onClick={onClick}
     >
       <FaArrowRight className="text-lg hover:text-[white]" />
@@ -72,7 +55,7 @@ function SamplePrevArrow(props) {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0 }}
-      className="md:block md:bg-[white] rounded rounded-full border-solid border-2 border-gray-300 absolute top-[270px] -left-[71px] p-4 hover:bg-headerCtaButtonBg hover:text-white"
+      className="md:block md:bg-[white] rounded-full border-solid border-2 border-gray-300 absolute top-[180px] -left-[71px] p-4 hover:bg-headerCtaButtonBg hover:text-white"
       onClick={onClick}
     >
       <FaArrowLeft className="text-lg hover:text-[white]" />
@@ -80,7 +63,7 @@ function SamplePrevArrow(props) {
   );
 }
 
-function ProductDetails() {
+const RelatedProduct = () => {
   const settings = {
     dots: false,
     infinite: true,
@@ -116,26 +99,27 @@ function ProductDetails() {
       },
     ],
   };
+
   return (
-    <div className="container mx-auto mt-[130px] border">
-      <div className="w-[360px] h-[390px] border">
-        <img src="./images/shopProduct/1.png" alt="" />
+    <div className="container mx-auto px-[60px] w-[100vw]">
+      <p className="text-[45px] font-bold">Related Product</p>
+
+      <div className="pt-5 pb-[90px]">
         <Slider {...settings}>
-          {categoryData.map((item, key) => (
-            <div key={key} className="mt-5">
-              <img
-                src={item.imgUrl}
-                alt=""
-                className="w-[205px] h-[70px] hover:duration-1000 hover:ease-in-out hover:transition"
-              />
-            </div>
+          {data.featuredata.map((item, index) => (
+            <SingleProductCard
+              key={index}
+              name={item.name}
+              discountedPrice={item.discountedPrice}
+              originalPrice={item.originalPrice}
+              imageUrl={item.imgUrl}
+              discountPercent={item.discountPercent}
+            />
           ))}
         </Slider>
       </div>
-      <div className=""></div>
-      <div className=""></div>
     </div>
   );
-}
+};
 
-export default ProductDetails;
+export default RelatedProduct;

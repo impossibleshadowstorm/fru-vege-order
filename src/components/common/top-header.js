@@ -33,9 +33,7 @@ const TopHeader = () => {
               <Dropdown.Item className="text-md w-[130px] h-[30px] flex justify-center px-[67px] hover:bg-[#f1f5f9] hover:text-textColor">Chinese</Dropdown.Item>
             </Dropdown>
           </div>
-          {/* <div className="flex items-center gap-2">
-            English <FaArrowDown size={16} color="green" />
-          </div> */}
+         
           <div className="contact-icon flex items-center gap-5">
             <FaFacebook size={16} className="cursor-pointer" />
             <FaInstagram size={16} className="cursor-pointer" />
