@@ -12,10 +12,7 @@ const CartCoupon = () => {
           className="px-10 py-4 border outline-1 outline-greenBorder mr-2"
         />
 
-        <LTRAnimatedBtn
-          name="Apply Coupon"
-          customClass={"px-6 py-4"}
-        />
+        <LTRAnimatedBtn name="Apply Coupon" customClass={"px-6 py-4"} />
       </div>
     </div>
   );

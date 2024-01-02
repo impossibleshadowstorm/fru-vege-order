@@ -15,7 +15,6 @@ const Header = ({ isHomePage }) => {
             className="filter contrast-75"
           />
         </div>
-        {/* <div className="w-20px"></div> */}
         <div className="flex md:gap-12 gap-9 items-center">
           <div
             className={`flex gap-4 ${
@@ -35,26 +34,32 @@ const Header = ({ isHomePage }) => {
               About
             </NavLink>
 
-            <NavLink
-              to="#"
-              className="font-medium hover:text-textColor"
-            >
-              <div className={`hover:text-textColor ${isHomePage ? "text-black" : "text-white"}`}>
+            <NavLink to="#" className="font-medium hover:text-textColor">
+              <div
+                className={`hover:text-textColor ${
+                  isHomePage ? "text-black" : "text-white"
+                }`}
+              >
                 <Dropdown label="Shop" inline>
                   <Dropdown.Item className="text-md w-[190px] h-[30px] flex justify-left px-[27px] hover:bg-[#f1f5f9] hover:text-textColor">
-                    <NavLink to="/shop" className="font-medium hover:text-textColor">
-                    Shop
-                   </NavLink> 
+                    <NavLink
+                      to="/shop"
+                      className="font-medium hover:text-textColor"
+                    >
+                      Shop
+                    </NavLink>
                   </Dropdown.Item>
                   <Dropdown.Item className="text-md w-[190px] h-[30px] flex justify-left px-[27px] hover:bg-[#f1f5f9] hover:text-textColor">
-                  <NavLink to="/product/:id/" className="font-medium hover:text-textColor">
-                    Product details
-                   </NavLink> 
+                    <NavLink
+                      to="/product/:id/"
+                      className="font-medium hover:text-textColor"
+                    >
+                      Product details
+                    </NavLink>
                   </Dropdown.Item>
                   <Dropdown.Item className="text-md w-[190px] h-[30px] flex justify-left px-[27px] hover:bg-[#f1f5f9] hover:text-textColor">
                     Other pages
                   </Dropdown.Item>
-                 
                 </Dropdown>
               </div>
             </NavLink>
@@ -64,12 +69,6 @@ const Header = ({ isHomePage }) => {
               className="font-medium hover:text-textColor md:pr-3 pr-0"
             >
               Cart
-            </NavLink>
-            <NavLink
-              to="/pages"
-              className="font-medium hover:text-textColor md:pr-3 pr-0"
-            >
-              Pages
             </NavLink>
             <NavLink
               to="/contact"

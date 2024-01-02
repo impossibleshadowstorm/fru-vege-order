@@ -10,6 +10,7 @@ import { useEffect } from "react";
 import Layout from "./components/common/layout";
 import Login from "./pages/auth/login";
 import Register from "./pages/auth/register";
+import Checkout from "./pages/checkout";
 import ProductDetail from "./pages/product-detail";
 
 const router = createBrowserRouter([
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/checkout",
+        element: <Checkout />,
       },
     ],
   },

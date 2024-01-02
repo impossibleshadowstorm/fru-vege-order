@@ -33,7 +33,13 @@ const CartTotal = () => {
             </tbody>
           </table>
         </div>
-        <RLTRAnimatedBtn name="Proceed To Checkout" customClass={" w-[100%] px-6 py-4 my-1"} />
+        <RLTRAnimatedBtn
+          handleClick={() => {
+            window.location.href = "/checkout";
+          }}
+          name="Proceed To Checkout"
+          customClass={" w-[100%] px-6 py-4 my-1"}
+        />
       </div>
     </div>
   );
