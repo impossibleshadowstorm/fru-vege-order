@@ -1,11 +1,17 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
 import data from "../../../utils/consts.js";
+import { useLocation } from "react-router-dom";
+
 
 const TopRatedProduct = () => {
+  const location = useLocation();
+
+  const isProductDetails = location.pathname === "/product/:id/";
+
   return (
-    <div className="border flex flex-col gap-5 px-[40px]">
-      <div className="flex justify-left items-center gap-5 pl-[30px]">
+    <div className={`border flex flex-col gap-3 ${isProductDetails ? "px-[30px] pb-0" : "pl-[9px] ml-3 w-[325px]"}`}>
+      <div className="flex justify-left items-center gap-5 pl-[20px]">
         <div className="flex ">
           <p className=" rounded-3xl text-[54px] text-textColor">-</p>
           <p className="rounded-full text-[42px] text-textColor">.</p>
@@ -14,7 +20,7 @@ const TopRatedProduct = () => {
       </div>
 
       {data.categoryData.slice(0, 3).map((item, key) => (
-        <div key={key} className="flex gap-5 pt-5">
+        <div key={key} className={`flex gap-5 ${isProductDetails ? "pt-5" : "py-2.5"}`}>
           <img
             src={item.imgUrl}
             alt=""
