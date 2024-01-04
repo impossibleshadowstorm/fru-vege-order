@@ -128,6 +128,13 @@ const categoryData = [
   },
 ];
 
-const alldata = { FILTER_PRODUCTS, MembersDetails, featuredata, categoryData };
+
+const themeConstants = {
+  name: "theme",
+  LIGHT_THEME: "light-theme",
+  DARK_THEME: "dark-theme",
+}
+
+const alldata = { FILTER_PRODUCTS, MembersDetails, featuredata, categoryData, themeConstants };
 
 export default alldata;

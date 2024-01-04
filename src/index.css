@@ -27,10 +27,11 @@
 
 
   .dark-theme {
-    --home-header: #F7F5EB;
-    --other-header: #071C1F;
-    --header-cta-button-bg: #000;
-    --landing-sec-bg: #F7F5EB;
+    --home-header: #f9d10c;
+    --other-header: #0addfe;
+    --header-cta-button-bg: #f60e0e;
+    --landing-sec-bg: #000;
+    --text-color: #0ff41b;
   }
 }
 

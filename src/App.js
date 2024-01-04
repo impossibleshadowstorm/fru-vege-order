@@ -1,6 +1,5 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./App.css";
-import { useThemeContext } from "./components/context/theme-context";
 import Home from "./pages/home";
 import Cart from "./pages/cart";
 import About from "./pages/about";
@@ -11,6 +10,9 @@ import Layout from "./components/common/layout";
 import Login from "./pages/auth/login";
 import Register from "./pages/auth/register";
 import ProductDetail from "./pages/product-detail";
+import { useSelector, useDispatch } from "react-redux";
+import { lightTheme, darkTheme } from "./reducers/website-theme-reducer";
+import alldata from "./utils/consts";
 
 const router = createBrowserRouter([
   {
@@ -59,15 +61,28 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  const { theme, setTheme } = useThemeContext();
+  const theme = useSelector((state) => state.websiteTheme.theme);
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    if (!localStorage.getItem("theme")) {
-      localStorage.setItem("theme", theme);
+    const storedTheme = localStorage.getItem(alldata.themeConstants.name);
+
+    if (!storedTheme) {
+      localStorage.setItem(alldata.themeConstants.name, theme);
     } else {
-      setTheme(localStorage.getItem("theme"));
+      if (
+        storedTheme === alldata.themeConstants.LIGHT_THEME &&
+        theme !== alldata.themeConstants.LIGHT_THEME
+      ) {
+        dispatch(lightTheme());
+      } else if (
+        storedTheme === alldata.themeConstants.DARK_THEME &&
+        theme !== alldata.themeConstants.DARK_THEME
+      ) {
+        dispatch(darkTheme());
+      }
     }
-  }, []); //eslint-disable-line
+  }, [dispatch, theme]); //eslint-disable-line
   return <RouterProvider router={router} />;
 }
 
