@@ -1,3 +1,5 @@
+import alldata from "./consts";
+
 const cndURL = process.env.REACT_APP_PUBLIC_CND_URL;
 
 export const imageLoader = ({ src }) => {
