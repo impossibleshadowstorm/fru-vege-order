@@ -27,7 +27,7 @@ const picContainer = {
 
 const AboutSection = () => {
   return (
-    <div>
+    <div className="">
       <motion.div className="container gap-14 mx-auto md:pl-12 flex lg:flex-row flex-col justify-center items-center md:mt-14 mt-12 md:p-5 ">
         <motion.div
           variants={picContainer}
@@ -48,9 +48,9 @@ const AboutSection = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0 }}
-          className="container mx-auto lg:pl-12 lg:h-[90vh] lg:w-[50%] w-[100%] flex flex-col items-left lg:justify-center justify-start gap-8"
+          className="container mx-auto lg:pl-12 text-textColorBlack lg:h-[90vh] lg:w-[50%] w-[100%] flex flex-col items-left lg:justify-center justify-start gap-8"
         >
-          <div className="text-base lg:text-left md:text-center font-bold text-textColor">
+          <div className="text-base lg:text-left md:text-center font-bold text-otherTextColor">
             KNOW MORE ABOUT SHOP
           </div>
           <div className="md:text-5xl text-4xl lg:w-[25vw] font-bold">

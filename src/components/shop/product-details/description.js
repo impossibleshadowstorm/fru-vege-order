@@ -2,7 +2,7 @@ import React from "react";
 
 const DescriptionforProduct = () => {
   return (
-    <div className="mb-[90px]">
+    <div className="mb-[90px] text-textColorBlack">
       <p className="text-[24px] font-bold">Lorem ipsum dolor sit amet elit.</p>
 
       <p className="pt-[39px] text-[17px]">

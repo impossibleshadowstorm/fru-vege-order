@@ -109,13 +109,13 @@ const LandingSection = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0 }}
-        className="md:block md:bg-[white] border-solid border-2 border-gray-300 absolute top-[120px] left-[11px] p-1 hover:bg-headerCtaButtonBg hover:text-white"
+        className="md:block text-textColorBlack md:bg-otherHeaderCtaButtonBg hover:bg-hoverArrowBg hover:text-textColorWhite border-solid border-2 border-gray-300 absolute top-[120px] left-[11px] p-1"
         onClick={() => {
           onClick();
           prevImg(selectedImg);
         }}
       >
-        <FaArrowLeft className="text-lg hover:text-[white]" />
+        <FaArrowLeft className="text-lg" />
       </motion.div>
     );
   }
@@ -128,13 +128,13 @@ const LandingSection = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0 }}
-        className="md:block md:bg-[white] border-solid border-2 border-gray-300 absolute top-[120px] left-[71px] p-1 hover:bg-headerCtaButtonBg hover:text-white"
+        className="md:block text-textColorBlack md:bg-otherHeaderCtaButtonBg hover:bg-hoverArrowBg hover:text-textColorWhite border-solid border-2 border-gray-300 absolute top-[120px] left-[71px] p-1"
         onClick={() => {
           onClick();
           nextImg(selectedImg);
         }}
       >
-        <FaArrowRight className="text-lg hover:text-[white]" />
+        <FaArrowRight className="text-lg" />
       </motion.div>
     );
   }
@@ -185,16 +185,16 @@ const LandingSection = () => {
           <li>
             <FaRegStar size={16} />
           </li>
-          <li className="text-textColor">(95 Review)</li>
+          <li className="text-otherTextColor">(95 Review)</li>
         </ul>
 
-        <p className="text-[23px] font-bold">Vegetables Juices</p>
-        <div className="flex gap-5 items-center text-textColor">
+        <p className="text-[23px] text-textColorBlack font-bold">Vegetables Juices</p>
+        <div className="flex gap-5 items-center text-otherTextColor">
           <span className="text-[50px]">$49.00</span>
           <span className="text-[40px] line-through">$65.00</span>
         </div>
         <hr className="pt-4" />
-        <div className="flex gap-3 pb-4">
+        <div className="flex gap-3 pb-4 text-textColorBlack">
           <p>Categories:</p>
           <div className="flex gap-2 font-semibold">
             <button type="button" className="hover:text-textColor">
@@ -217,17 +217,17 @@ const LandingSection = () => {
           <div className="flex">
             <button
               type="button"
-              className="border p-4"
+              className="border p-4 text-textColorBlack"
               onClick={DecrementCount}
             >
               -
             </button>
-            <div className="border w-[57px] flex items-center justify-center">
+            <div className="border w-[57px] flex items-center justify-center text-textColorBlack">
               {count}
             </div>
             <button
               type="button"
-              className="border p-4"
+              className="border p-4 text-textColorBlack"
               onClick={IncrementCount}
             >
               +
@@ -237,7 +237,7 @@ const LandingSection = () => {
             <RLTRAnimatedBtn name={"Add To Cart"} />
           </div>
         </div>
-        <div className="flex gap-[35px] items-center pt-4 pb-4">
+        <div className="flex gap-[35px] text-textColorBlack items-center pt-4 pb-4">
           <div className="flex gap-2 items-center hover:text-textColor cursor-pointer">
             <FaHeart />
             <span> Add to Wishlist</span>
@@ -248,7 +248,7 @@ const LandingSection = () => {
           </div>
         </div>
         <hr />
-        <div className="flex gap-5 pt-4">
+        <div className="flex gap-5 pt-4 text-textColorBlack">
           <span>Share:</span>
           <div className="flex gap-6 items-center">
             <FaFacebook
@@ -270,7 +270,7 @@ const LandingSection = () => {
           </div>
         </div>
         <div className="pt-[40px] flex flex-col justify-left">
-          <p className="text-lg font-semibold pb-3">Guaranteed Safe Checkout</p>
+          <p className="text-lg text-textColorBlack font-semibold pb-3">Guaranteed Safe Checkout</p>
           <img src="/images/home/category/8thsection/payment-4.png" alt="" />
         </div>
       </div>

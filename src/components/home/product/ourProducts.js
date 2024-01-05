@@ -1,22 +1,26 @@
 import React, { useState } from "react";
 import Products from "./products";
+import { useSelector } from "react-redux";
+import alldata from "../../../utils/consts"
+
 
 const OurProducts = () => {
   const [category, setCategory] = useState("food_drinks");
+  const theme = useSelector((state) => state.websiteTheme.theme);
 
   const handleCategory = (categoryValue) => {
     setCategory(categoryValue);
   };
 
   const changeColor = (text) => {
-    return category === text ? "text-hoverTextColor":"text-black";
+    return category === text ? "text-hoverTextColor":(theme === alldata.themeConstants.DARK_THEME ? "text-white" : "text-black");
   };
  
 
   return (
-    <div className="container mx-auto md:pl-12 mt-[50px] mb-[50px]">
+    <div className="container mx-auto md:pl-12 mt-[50px] mb-[50px] text-textColorBlack">
       <div className="">
-        <p className="text-center text-6xl font-bold pt-14">Our Products</p>
+        <p className="text-center text-6xl font-bold pt-14 text-textColorBlack">Our Products</p>
       </div>
 
       <div className="flex flex-row justify-center items-center gap-10 mt-[49px] pb-[43px] text-md font-semibold">

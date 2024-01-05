@@ -21,7 +21,7 @@ function ProductDescription() {
           <button
             type="button"
             onClick={descHandler}
-            className="text-lg font-semibold focus:text-textColor"
+            className="text-lg font-semibold text-textColorBlack focus:text-TextColor"
           >
             Description
           </button>
@@ -29,7 +29,7 @@ function ProductDescription() {
           <button
             type="button"
             onClick={reviewHandler}
-            className="text-lg font-semibold focus:text-textColor"
+            className="text-lg font-semibold text-textColorBlack focus:text-TextColor"
           >
             Reviews
           </button>

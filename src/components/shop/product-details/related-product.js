@@ -39,7 +39,7 @@ function SampleNextArrow(props) {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0 }}
-      className="md:block md:bg-[white] rounded-full border-solid border-2 border-gray-300 absolute top-[180px] -right-[71px] p-4 hover:bg-headerCtaButtonBg hover:text-white"
+      className="md:block text-textColorBlack md:bg-otherHeaderCtaButtonBg rounded-full border-solid border-2 border-gray-300 absolute top-[180px] -right-[71px] p-4 hover:bg-hoverArrowBg hover:text-textColorWhite"
       onClick={onClick}
     >
       <FaArrowRight className="text-lg hover:text-[white]" />
@@ -55,7 +55,7 @@ function SamplePrevArrow(props) {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0 }}
-      className="md:block md:bg-[white] rounded-full border-solid border-2 border-gray-300 absolute top-[180px] -left-[71px] p-4 hover:bg-headerCtaButtonBg hover:text-white"
+      className="md:block text-textColorBlack md:bg-otherHeaderCtaButtonBg rounded-full border-solid border-2 border-gray-300 absolute top-[180px] -left-[71px] p-4 hover:bg-hoverArrowBg hover:text-textColorWhite"
       onClick={onClick}
     >
       <FaArrowLeft className="text-lg hover:text-[white]" />
@@ -101,8 +101,8 @@ const RelatedProduct = () => {
   };
 
   return (
-    <div className="container mx-auto px-[60px] w-[100vw]">
-      <p className="text-[45px] font-bold">Related Product</p>
+    <div className="container mx-auto px-[60px] mt-[69px] w-[100vw]">
+      <p className="text-[45px] text-textColorBlack font-bold">Related Product</p>
 
       <div className="pt-5 pb-[90px]">
         <Slider {...settings}>

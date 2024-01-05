@@ -14,14 +14,14 @@ const LeftLandingSection = ({ cIdx }) => {
         } justify-center`}
       >
         <img src="/images/pic1.png" alt="pic1" />
-        <p>100% Genuine Product</p>
+        <p className="text-textColorBlack">100% Genuine Product</p>
       </motion.div>
       <div className={`flex flex-col md:w-[30vw] justify-center`}>
         <motion.span
           initial={{ opacity: 0 }}
           animate={{ y: -10, opacity: 1 }}
           transition={{ duration: 1.5 }}
-          className={`md:text-5xl text-3xl font-rajdhani md:w-[30vw] ${
+          className={`md:text-5xl text-3xl font-rajdhani md:w-[30vw] text-textColorBlack ${
             cIdx % 2 === 0 ? "" : "w-[65vw]"
           } m-auto font-bold ${cIdx % 2 === 0 ? "" : "text-right"}`}
         >
@@ -34,7 +34,7 @@ const LeftLandingSection = ({ cIdx }) => {
           initial={{ opacity: 0 }}
           animate={{ y: -20, opacity: 1 }}
           transition={{ duration: 1.5 }}
-          className={`md:pt-5 pt-5 md:w-[30vw] w-[60vw] m-auto ${
+          className={`md:pt-5 pt-5 md:w-[30vw] w-[60vw] m-auto text-textColorBlack ${
             cIdx % 2 === 0 ? "" : "text-right"
           }`}
         >

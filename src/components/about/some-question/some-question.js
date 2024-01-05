@@ -33,27 +33,27 @@ const SomeQuestion = () => {
 
   return (
     <div className="mt-[90px] flex flex-col justify-center items-center">
-      <p className="text-[50px] font-bold pb-[23px]">Some Questions</p>
+      <p className="text-[50px] font-bold pb-[23px] text-textColorBlack">Some Questions</p>
       <div className="container mx-auto flex jusitify-center gap-8">
         <div className="w-[40vw] pt-5">
           {questions.map(({ question, key }) => (
             <div key={key} className="border border-gray-300 p-5 mt-5">
               <div className="flex justify-between px-5 items-center gap-9">
-                <p className="text-lg font-semibold">{question}</p>
+                <p className="text-lg font-semibold text-textColorBlack">{question}</p>
                 <button
                   type="button"
                   onClick={() => {
                     handleClick(key);
                     toggleButtonContent(key);
                   }}
-                  className="text-[37px] font-md bg-homeHeaderBg w-[30px] h-[30px] flex justify-center items-center"
+                  className="text-[23px] font-md bg-homeHeaderBg border text-textColorBlack w-[30px] h-[32px] flex justify-center items-center"
                 >
-                   {ishide === key ? "-" : "+"}
+                   {ishide === key ? '-' : '+' }
                 </button>
               </div>
               {visibility[key] && (
                 <div className="py-5 items-center px-5">
-                  <p className="text-lg">
+                  <p className="text-lg text-textColorBlack">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Scelerisque eleifend donec pretium vulputate sapien

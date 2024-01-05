@@ -384,8 +384,8 @@ function SampleNextArrow(props) {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0 }}
-      className="md:block md:bg-[white] rounded-full absolute top-[350px] -right-[71px] 
-      p-4 border-solid border-2 border-gray-300 hover:bg-headerCtaButtonBg hover:text-white"
+      className="md:block text-textColorBlack md:bg-otherHeaderCtaButtonBg rounded-full absolute top-[350px] -right-[71px] 
+      p-4 border-solid border-2 border-gray-300 hover:bg-hoverArrowBg hover:text-textColorWhite"
       onClick={onClick}
     >
       <FaArrowRight className="text-lg" />
@@ -401,8 +401,8 @@ function SamplePrevArrow(props) {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0 }}
-      className="md:block md:bg-[white] rounded rounded-full absolute top-[350px] -left-[71px] 
-      p-4 border-solid border-2 border-gray-300 hover:bg-headerCtaButtonBg hover:text-white"
+      className="md:block text-textColorBlack md:bg-otherHeaderCtaButtonBg rounded rounded-full absolute top-[350px] -left-[71px] 
+      p-4 border-solid border-2 border-gray-300 hover:bg-hoverArrowBg hover:text-textColorWhite"
       onClick={onClick}
     >
       <FaArrowLeft className="text-lg" />
@@ -421,7 +421,7 @@ const Products = ({ category }) => {
     prevArrow: <SamplePrevArrow />,
   };
   return (
-    <div className="container mx-auto ">
+    <div className="container mx-auto px-[40px]">
       <div className="container h-[100vh] mx-auto">
         <Slider {...settings}>
           {data[category].length % 2 === 0

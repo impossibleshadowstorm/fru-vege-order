@@ -8,9 +8,9 @@ const FeatureProduct = () => {
     <>
       <div className="container mx-auto md:pl-14 h-[100vh]">
         <div className="">
-          <p className="text-center text-6xl font-bold">Featured Products</p>
+          <p className="text-center text-6xl font-bold text-textColorBlack">Featured Products</p>
         </div>
-       <div className="flex flex-wrap gap-4 justify-center pt-5">
+       <div className="flex flex-wrap gap-5 justify-center pt-2">
         {data.featuredata.map((item, index) => (
           <SingleProductCard key={index}  
           name={item.name}
