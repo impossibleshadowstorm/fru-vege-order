@@ -3,14 +3,18 @@ import { NavLink } from "react-router-dom";
 import { FaSearch, FaUserAlt, FaCartPlus } from "react-icons/fa";
 import CtaBtn from "./btnComponent/cta-btn";
 import { Dropdown } from "flowbite-react";
+import alldata from "../../utils/consts"
+import { useSelector } from "react-redux";
 
 const Header = ({ isHomePage }) => {
+  const theme = useSelector((state) => state.websiteTheme.theme);
+
   return (
     <div className="flex items-center mx-4 md:container md:mx-auto">
       <div className="flex md:flex-row flex-col md:gap-5 gap-3 justify-between md:pl-9 md:pr-14 md:mr-6 mr-3 items-center md:w-[90vw] w-[95vw] md:p-0 p-3">
         <div className="">
           <img
-            src={`${isHomePage ? "/images/logo.png" : "/images/logo-2.png"}`}
+            src={`${isHomePage ? (theme === alldata.themeConstants.DARK_THEME ? "/images/logo-2.png" : "/images/logo.png")  : "/images/logo-2.png"}`}
             alt="logo"
             className="filter contrast-75"
           />
@@ -39,7 +43,7 @@ const Header = ({ isHomePage }) => {
               to="#"
               className="font-medium hover:text-textColor"
             >
-              <div className={`hover:text-textColor ${isHomePage ? "text-black" : "text-white"}`}>
+              <div className={`hover:text-textColor ${isHomePage ? "text-textColorBlack" : "text-white"}`}>
                 <Dropdown label="Shop" inline>
                   <Dropdown.Item className="text-md w-[190px] h-[30px] flex justify-left px-[27px] hover:bg-[#f1f5f9] hover:text-textColor">
                     <NavLink to="/shop" className="font-medium hover:text-textColor">
@@ -80,13 +84,13 @@ const Header = ({ isHomePage }) => {
           </div>
           <CtaBtn name={"GET A QUOTE"} />
           <div className="flex gap-3">
-            <div className="flex justify-center items-center bg-white text-black border-red-100 w-[50px] h-[52px] hover:text-white hover:bg-headerCtaButtonBg">
+            <div className="flex justify-center items-center bg-otherHeaderCtaButtonBg text-textColorBlack border-red-100 w-[50px] h-[52px] hover:text-white hover:bg-headerCtaButtonBg">
               <FaSearch size={19}></FaSearch>
             </div>
-            <div className="flex justify-center items-center bg-white text-black border-red-100 w-[50px] h-[52px] hover:text-white hover:bg-headerCtaButtonBg">
+            <div className="flex justify-center items-center bg-otherHeaderCtaButtonBg text-textColorBlack  border-red-100 w-[50px] h-[52px] hover:text-white hover:bg-headerCtaButtonBg">
               <FaUserAlt size={16} />
             </div>
-            <div className="flex justify-center items-center bg-white text-black border-red-100 w-[50px] h-[52px] hover:text-white hover:bg-headerCtaButtonBg">
+            <div className="flex justify-center items-center bg-otherHeaderCtaButtonBg text-textColorBlack  border-red-100 w-[50px] h-[52px] hover:text-white hover:bg-headerCtaButtonBg">
               <FaCartPlus size={16} />
             </div>
           </div>

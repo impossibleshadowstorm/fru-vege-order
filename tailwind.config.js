@@ -23,6 +23,7 @@ module.exports = {
         otherHeaderBg: "var(--other-header-bg)",
         headerCtaButtonBg: "var(--header-cta-button-bg)",
         hoverHeaderCtaButtonBg: "var(--hover-header-cta-button-bg)",
+        otherHeaderCtaButtonBg: "var(--other-header-cta-button-bg)",
         landingSecBg: "var(--landing-sec-bg)",
       },
       textColor: {
@@ -32,6 +33,7 @@ module.exports = {
         otherTextColor: "var(--other-text-color)",
         hoverTextColor: "var(--hover-text-color)",
         starColor: "var(--star-text-color)",
+        textColorBlack : "var(--text-color-white)",
       },
       borderColor: {
         homeBorder: "var(--border-color)",

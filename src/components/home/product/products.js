@@ -421,7 +421,7 @@ const Products = ({ category }) => {
     prevArrow: <SamplePrevArrow />,
   };
   return (
-    <div className="container mx-auto ">
+    <div className="container mx-auto px-[40px]">
       <div className="container h-[100vh] mx-auto">
         <Slider {...settings}>
           {data[category].length % 2 === 0
