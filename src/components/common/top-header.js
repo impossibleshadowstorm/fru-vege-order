@@ -8,21 +8,21 @@ import {
   FaInstagram,
   FaTelegram,
 } from "react-icons/fa";
-import { useDispatch, useSelector } from "react-redux";
-import alldata from "../../utils/consts";
-import { darkTheme, lightTheme } from "../../reducers/website-theme-reducer";
+// import { useDispatch, useSelector } from "react-redux";
+// import alldata from "../../utils/consts";
+// import { darkTheme, lightTheme } from "../../reducers/website-theme-reducer";
 
 const TopHeader = () => {
-  const theme = useSelector((state) => state.websiteTheme.theme);
-  const dispatch = useDispatch();
+  // const theme = useSelector((state) => state.websiteTheme.theme);
+  // const dispatch = useDispatch();
 
-  const toggleTheme = () => {
-    if (theme === alldata.themeConstants.LIGHT_THEME) {
-      dispatch(darkTheme());
-    } else if (theme === alldata.themeConstants.DARK_THEME) {
-      dispatch(lightTheme());
-    }
-  };
+  // const toggleTheme = () => {
+  //   if (theme === alldata.themeConstants.LIGHT_THEME) {
+  //     dispatch(darkTheme());
+  //   } else if (theme === alldata.themeConstants.DARK_THEME) {
+  //     dispatch(lightTheme());
+  //   }
+  // };
 
   return (
     <header className="flex items-center justify-around container mx-auto">
@@ -39,7 +39,7 @@ const TopHeader = () => {
         </div>
         <div className="flex gap-5 md:ml-12">
           <div className="text-textColorBlack w-[90px]">
-            <Dropdown label="English" inline>
+            <Dropdown label="English" inline className="bg-homeHeaderBg text-textColorBlack">
               <Dropdown.Item className="text-md w-[130px] h-[30px] flex justify-center px-[67px] hover:bg-[#f1f5f9] hover:text-textColor">
                 Hindi
               </Dropdown.Item>
@@ -63,7 +63,7 @@ const TopHeader = () => {
 
           <div
             className="contact-icon flex items-center gap-5 text-textColorBlack"
-            onClick={() => toggleTheme(dispatch, theme)}
+            // onClick={() => toggleTheme(dispatch, theme)}
           >
             <FaFacebook size={16} className="cursor-pointer" />
             <FaInstagram size={16} className="cursor-pointer" />

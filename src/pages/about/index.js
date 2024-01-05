@@ -11,7 +11,7 @@ import Footer from '../../components/common/footer/footer'
 
 const About = () => {
   return (
-    <div className=''>
+    <div className="bg-fullBg">
       <AboutSection />
       <FeatureAbout />
       <TeamMembers />

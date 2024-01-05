@@ -99,10 +99,10 @@ function SampleNextArrow(props) {
     whileInView="show"
     viewport={{once:false, amount:0}}
 
-       className= "md:block md:bg-[white] rounded-full absolute top-[110px] -right-[71px] p-4 hover:bg-headerCtaButtonBg hover:text-white"
+       className= "md:block text-textColorBlack md:bg-otherHeaderCtaButtonBg rounded-full absolute top-[110px] -right-[71px] p-4 hover:bg-hoverArrowBg hover:text-textColorWhite"
       onClick={onClick}
     >
-      <FaArrowRight className="text-lg hover:text-[white]"/>
+      <FaArrowRight className="text-lg"/>
     </motion.div>
   );
 }
@@ -116,10 +116,10 @@ function SamplePrevArrow(props) {
     whileInView="show"
     viewport={{once:false, amount:0}}
 
-      className= "md:block md:bg-[white] rounded-full absolute top-[110px] -left-[71px] p-4 hover:bg-headerCtaButtonBg hover:text-white"
+      className= "md:block text-textColorBlack md:bg-otherHeaderCtaButtonBg rounded-full absolute top-[110px] -left-[71px] p-4 hover:bg-hoverArrowBg hover:text-textColorWhite"
       onClick={onClick}
     >
-      <FaArrowLeft className="text-lg hover:text-[white]"/>
+      <FaArrowLeft className="text-lg"/>
     </motion.div>
   );
 }
@@ -177,7 +177,7 @@ const TopSection = () => {
               <motion.div
               key={key}
                 variants={boxDiv}
-                className="group lg:h-[37vh] h-[50vh] bg-[white] border border-y border-gray-1000 relative"
+                className="group lg:h-[37vh] h-[50vh] bg-boxBg text-textColorBlack border border-y border-gray-1000 relative"
               >
                 <div className="flex flex-col justify-center items-center gap-4 pt-12">
                   <img

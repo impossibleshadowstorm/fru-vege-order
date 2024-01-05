@@ -4,7 +4,7 @@ const Breadcrumb = ({ title, pageName }) => {
   return (
     <div className="visible absolute bottom-[100px] left-[100px] container mx-auto h-[30px] text-white px-[80px] flex justify-between items-center">
       <div className="">
-        <p className="text-textColor font-semibold">
+        <p className="text-otherTextColor font-semibold">
           {"//"} WELCOME TO OUR COMPANY
         </p>
         <p className="text-[55px] font-bold">{title}</p>
@@ -15,7 +15,7 @@ const Breadcrumb = ({ title, pageName }) => {
             Home
           </a>{" "}
           |{" "}
-          <span className="text-textColor font-bold">
+          <span className="text-otherTextColor font-bold">
             {pageName}
           </span>
         </p>

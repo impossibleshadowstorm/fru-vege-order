@@ -66,10 +66,10 @@ function SampleNextArrow(props) {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0 }}
-      className="md:block md:bg-[white] rounded-full border-solid border-2 border-gray-300 absolute top-[100px] right-[20px] p-4 hover:bg-headerCtaButtonBg hover:text-white"
+      className="md:block text-textColorBlack md:bg-otherHeaderCtaButtonBg rounded-full border-solid border-2 border-gray-300 absolute top-[100px] right-[20px] p-4 hover:bg-hoverArrowBg hover:text-textColorWhite"
       onClick={onClick}
     >
-      <FaArrowRight className="text-lg hover:text-[white]" />
+      <FaArrowRight className="text-lg " />
     </motion.div>
   );
 }
@@ -82,10 +82,10 @@ function SamplePrevArrow(props) {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0 }}
-      className="md:block md:bg-[white] rounded-full border-solid border-2 border-gray-300 absolute top-[100px] left-[20px] z-20 p-4 hover:bg-headerCtaButtonBg hover:text-white"
+      className="md:block text-textColorBlack md:bg-otherHeaderCtaButtonBg rounded-full border-solid border-2 border-gray-300 absolute top-[100px] left-[20px] z-20 p-4 hover:bg-hoverArrowBg hover:text-textColorWhite"
       onClick={onClick}
     >
-      <FaArrowLeft className="text-lg hover:text-[white]" />
+      <FaArrowLeft className="text-lg" />
     </motion.div>
   );
 }
@@ -128,25 +128,25 @@ const ClientFeadback = () => {
   };
   return (
     <div className="h-[75vh] bg-homeHeaderBg flex flex-col gap-2 justify-center items-center">
-      <p className="text-textColor">{"//"} TESTIMONIALS</p>
-      <p className="text-[40px] font-bold">Clients Feedbacks.</p>
+      <p className="text-otherTextColor">{"//"} TESTIMONIALS</p>
+      <p className="text-[40px] text-textColorBlack font-bold">Clients Feedbacks.</p>
 
       <div className="w-[90rem] pt-5">
         <Slider {...settings}>
           {categoryData.map((item, key) => (
-            <div key={key} className="bg-white relative">
+            <div key={key} className="bg-boxBg border relative">
               <div className="flex justify-center items-center gap-4 p-[37px]">
                 <img src={item.imgUrl} alt="" className="w-[160px] h-[160px]" />
              
-              <div className="flex flex-col gap-3">
+              <div className="flex flex-col text-textColorBlack gap-3">
                 <p>
                   Lorem ipsum dolor sit ame it, consectetur adipisicing elit,
                   sed do eiusmod te mp or incididunt ut labore.consectetur adipisicing elit,
                   sed do eiusmod te mp or incididunt ut labore.
                 </p>
-                <div className="">
+                <div className="text-textColorBlack">
                 <p className="text-lg font-bold">Rosalina D. William</p>
-                <p className="text-textColor font-bold text-base">Founder</p>
+                <p className="text-otherTextColor font-bold text-base">Founder</p>
                 </div>
               </div>
               <div className="absolute bottom-2 right-3 opacity-10">

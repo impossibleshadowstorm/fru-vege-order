@@ -11,17 +11,22 @@
 
   .light-theme {
     --home-header-bg: #F7F5EB;
+    --box-bg : white;
+    --full-bg: white;
+    --hover-arrow-bg: #80B500;
+    --form-bg: #f0f4f7;
     --home-header-text: rgb(0, 0, 0);
     --other-header-text: white;
     --other-header-bg: #070701;
     --header-cta-button-bg: #80B500;
-    --hover-header-cta-button-bg: #699403;
+    --hover-header-cta-button-bg: #80B500;
     --other-header-cta-button-bg: white;
     --landing-sec-bg: #F7F5EB;
     --input-outline-color: #80B500;
     --text-color: #80b603;
     --text-color-white: black;
-    --other-text-color:#4943f8;
+    --text-color-black: white;
+    --other-text-color: #80b603;
     --hover-text-color: #80b603;
     --star-text-color: #ffb800;
     --border-color: #80b603;
@@ -30,19 +35,24 @@
 
   .dark-theme {
     --home-header-bg: #141414;
+    --box-bg : black;
+    --full-bg : black;
+    --hover-arrow-bg : white;
+    --form-bg: #0e0e0e;
     --home-header-text: rgb(237, 237, 237);
     --other-header-text: rgb(249, 243, 243);
     --other-header-bg: #d8d8d8;
     --header-cta-button-bg: #000000;
-    --hover-header-cta-button-bg: #393939;
-    --other-header-cta-button-bg: black;
+    --hover-header-cta-button-bg: #3f3f3f;
+    --other-header-cta-button-bg: rgb(10, 10, 10);
     --landing-sec-bg: #1a1a19;
     --input-outline-color: #e0f8a7;
-    --text-color: #f5f6f3;
+    --text-color: #222222;
     --text-color-white: white;
-    --other-text-color:#c0befe;
+    --text-color-black: black;
+    --other-text-color:#ffffff;
     --hover-text-color: #c5fe41;
-    --star-text-color: #3f69f6;
+    --star-text-color: #ffb800;
     --border-color: #feb17e;
     
   }

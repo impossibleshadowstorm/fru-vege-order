@@ -6,7 +6,7 @@ import ReviewForm from "./review-form.js";
 
 const ReviewOfProduct = () => {
   return (
-    <div>
+    <div className="text-textColorBlack">
       <h3 className="text-[26px] font-bold">Customer Reviews</h3>
 
       <div className="">
@@ -27,7 +27,7 @@ const ReviewOfProduct = () => {
             <li>
               <FaRegStar size={13} />
             </li>
-            <li className="text-textColor">(95 Review)</li>
+            <li className="text-otherTextColor">(95 Review)</li>
           </ul>
         </div>
         <hr />
@@ -69,7 +69,7 @@ const ReviewOfProduct = () => {
                     <li>
                       <FaRegStar size={11} />
                     </li>
-                    <li className="text-textColor">(95 Review)</li>
+                    <li className="text-otherTextColor">(95 Review)</li>
                   </ul>
                 </div>
                 <p className="text-[15px] pt-2">
