@@ -18,7 +18,7 @@ const Layout = () => {
   const isRegisterPage = location.pathname === "/auth/register";
 
   return (
-    <div className={`${theme}`}>
+    <div className={`bg-boxBg ${theme}`}>
       {/* <div className={`${isHomePage ? "bg-homeHeaderBg" : "bg-otherHeaderBg"}`}> */}
       <div
         className={`${isHomePage ? "bg-homeHeaderBg" : "bg-otherHeaderBg"}`}

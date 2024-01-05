@@ -257,7 +257,7 @@ const Footer = () => {
                   placeholder="Email*"
                   className="text-black px-5 w-[240px] h-[60px]"
                 />
-                <div className="hover:bg-black hover:border w-[66px] h-[60px] bg-headerCtaButtonBg flex justify-center items-center">
+                <div className="hover:bg-black border w-[66px] h-[60px] bg-headerCtaButtonBg flex justify-center items-center">
                   <FaLocationArrow size={20} />
                 </div>
               </div>

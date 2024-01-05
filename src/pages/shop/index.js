@@ -8,7 +8,7 @@ import TopRatedProduct from "../../components/shop/product-details/top-rated-pro
 
 const Shop = () => {
   return (
-    <div>
+    <div className="bg-fullBg">
       <div className="flex justify-center gap-2">
         <div className="flex flex-col justify-left items-left mt-[100px] w-[50rem] gap-5">
           <ShopProduct />

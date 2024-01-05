@@ -4,10 +4,10 @@ import RLTRAnimatedBtn from "../../common/btnComponent/rltr-animated-btn";
 
 const AddReview = () => {
   return (
-    <div className="p-[30px]">
-      <p className="text-[25px] font-bold"> Add a Review</p>
+    <div className="p-[30px] border bg-formBg">
+      <p className="text-[25px] text-textColorBlack font-bold"> Add a Review</p>
       <div className="mt-5 flex gap-4">
-        <p className="text-textColor">Your Ratings:</p>
+        <p className="text-otherTextColor">Your Ratings:</p>
         <ul className="flex text-starColor justify-left items-center gap-1">
           <li>
             <FaStar size={13} />

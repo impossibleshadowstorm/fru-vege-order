@@ -11,7 +11,7 @@ function LTRAnimatedBtn({ name, customClass }) {
         scale: { type: "spring", stiffness: 300 },
         duration: 1.5,
       }}
-      className={`relative bg-black border py-2.5 px-3 font-medium text-white transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-headerCtaButtonBg before:transition-transform before:duration-300 before:content-[''] hover:text-white hover:border hover:border-transparent before:hover:scale-x-100 ${customClass}`}
+      className={`relative bg-otherHeaderBg border py-2.5 px-3 font-medium text-textColorWhite transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-headerCtaButtonBg before:transition-transform before:duration-300 before:content-[''] hover:text-white hover:border hover:border-transparent before:hover:scale-x-100 ${customClass}`}
     >
       {name}
     </motion.button>

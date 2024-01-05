@@ -8,8 +8,8 @@ import LandingSection from "../../components/shop/product-details/landing-sectio
 
 const ProductDetail = () => {
   return (
-    <>
-      <div className="container mx-auto px-[60px] mt-[130px] flex gap-5 ">
+    <div className="bg-fullBg">
+      <div className="container mx-auto px-[60px] pt-[130px] flex gap-5">
         <LandingSection />
         <TopRatedProduct />
       </div>
@@ -17,7 +17,7 @@ const ProductDetail = () => {
       <RelatedProduct />
       <DeliveryMode />
       <Footer />
-    </>
+    </div>
   );
 };
 

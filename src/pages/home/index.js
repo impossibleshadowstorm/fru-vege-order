@@ -12,7 +12,7 @@ import Footer from '../../components/common/footer/footer'
 
 const Home = () => {
   return (
-    <>
+    <div className="bg-fullBg">
       <LandingSection />
       <AboutSection />
       <TopSection />
@@ -23,7 +23,7 @@ const Home = () => {
       <BlogSection />
       <DeliveryMode />
       <Footer />
-    </>
+    </div>
   );
 };
 

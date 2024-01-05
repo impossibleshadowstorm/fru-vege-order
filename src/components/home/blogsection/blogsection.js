@@ -66,7 +66,7 @@ function SampleNextArrow(props) {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0 }}
-      className="md:block md:bg-[white] rounded-full border-solid border-2 border-gray-300 absolute top-[270px] -right-[71px] p-4 hover:bg-headerCtaButtonBg hover:text-white"
+      className="md:block text-textColorBlack md:bg-otherHeaderCtaButtonBg rounded-full border-solid border-2 border-gray-300 absolute top-[270px] -right-[71px] p-4 hover:bg-hoverArrowBg hover:text-textColorWhite"
       onClick={onClick}
     >
       <FaArrowRight className="text-lg hover:text-[white]" />
@@ -82,7 +82,7 @@ function SamplePrevArrow(props) {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0 }}
-      className="md:block md:bg-[white] rounded-full border-solid border-2 border-gray-300 absolute top-[270px] -left-[71px] p-4 hover:bg-headerCtaButtonBg hover:text-white"
+      className="md:block text-textColorBlack md:bg-otherHeaderCtaButtonBg rounded-full border-solid border-2 border-gray-300 absolute top-[270px] -left-[71px] p-4 hover:bg-hoverArrowBg hover:text-textColorWhite"
       onClick={onClick}
     >
       <FaArrowLeft className="text-lg hover:text-[white]" />
@@ -128,7 +128,7 @@ const BlogSection = () => {
   };
   return (
     <div className="py-5">
-      <p className="text-center text-6xl font-bold pt-[100px] text-black">
+      <p className="text-center text-6xl font-bold pt-[100px] text-textColorBlack">
         Latest Blog
       </p>
       <div className="container mx-auto gap-9 mt-1 relative h-[80vh] w-[73rem]">
@@ -150,25 +150,25 @@ const BlogSection = () => {
               <div className="container mx-auto w-[350px] flex flex-col gap-5 py-5 ">
                 <div className="flex gap-7 ">
                   <div className="flex items-center gap-2">
-                    <FaUser size={16} className="text-textColor" />
-                    <p>by: Admin</p>
+                    <FaUser size={16} className="text-otherTextColor" />
+                    <p className="text-textColorBlack">by: Admin</p>
                   </div>
                   <div className="flex items-center gap-2">
-                    <FaTag size={16} className="text-textColor" />
-                    <p>Services</p>
+                    <FaTag size={16} className="text-otherTextColor" />
+                    <p className="text-textColorBlack">Services</p>
                   </div>
                 </div>
                 <div className="">
-                  <h3 className="text-2xl font-bold">{item.name}</h3>
+                  <h3 className="text-2xl font-bold text-textColorBlack">{item.name}</h3>
                 </div>
                 <hr />
                 <div className="flex justify-between">
                   <div className="flex items-center gap-2">
-                    <FaCalendar size={16} className="text-textColor" />
-                    <p>June 24,2020</p>
+                    <FaCalendar size={16} className="text-otherTextColor" />
+                    <p className="text-textColorBlack">June 24,2020</p>
                   </div>
                   <div className="">
-                    <p className="font-bold text-sm text-textColor">
+                    <p className="font-bold text-sm text-otherTextColor">
                       READ MORE
                     </p>
                   </div>

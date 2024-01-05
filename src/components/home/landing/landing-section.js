@@ -30,7 +30,7 @@ const LandingSection = () => {
       {/* left arrow */}
       <motion.div animate={{ x: 20, scale:1 }} initial={{scale:0}} transition={{ duration: 1.5 }}
         onClick={moveBackward}
-        className="w-[60px] h-[60px] rounded-full text-textColorBlack bg-otherHeaderCtaButtonBg text-size-2 flex justify-center items-center md:ml-8 ml-1 border border-solid border-gray-200 hover:bg-headerCtaButtonBg hover:text-[white]"
+        className="w-[60px] h-[60px] rounded-full text-textColorBlack bg-otherHeaderCtaButtonBg text-size-2 flex justify-center items-center md:ml-8 ml-1 border border-solid border-gray-200 hover:bg-hoverArrowBg hover:text-textColorWhite"
       >
         <FaArrowLeft size={22} className="w-6 h-5" />
       </motion.div>
@@ -47,7 +47,7 @@ const LandingSection = () => {
       {/* right arrow */}
       <motion.div animate={{ x:-20, scale:1 }} initial={{scale:0}} transition={{ duration: 1.5 }}
         onClick={moveForward}
-        className="w-[60px] h-[60px] rounded-full text-textColorBlack bg-otherHeaderCtaButtonBg text-size-2 flex justify-center items-center md:mr-8 mr-1 border border-solid border-gray-200 hover:bg-headerCtaButtonBg hover:text-[white]"
+        className="w-[60px] h-[60px] rounded-full text-textColorBlack bg-otherHeaderCtaButtonBg text-size-2 flex justify-center items-center md:mr-8 mr-1 border border-solid border-gray-200 hover:bg-hoverArrowBg hover:text-textColorWhite"
       >
         <FaArrowRight size={22} className="w-6 h-5" />
       </motion.div>

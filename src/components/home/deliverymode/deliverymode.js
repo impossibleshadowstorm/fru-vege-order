@@ -2,7 +2,7 @@ import React from 'react'
 
 const DeliveryMode = () => {
   return (
-    <div className='container mx-auto bg-white w-[1500px] h-[163px] mb-5 shadow-lg border flex justify-around items-center gap-7'>
+    <div className='container mx-auto bg-fullBg text-textColorBlack w-[1500px] h-[163px] mb-5 shadow-lg border flex justify-around items-center gap-7'>
       <div className="flex gap-4 items-center pl-3">
         <div className="">
             <img src="images/home/category/8thsection/1.png" alt=""/>
