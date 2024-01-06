@@ -9,16 +9,21 @@ import {
   FaTelegram,
   FaLocationArrow,
 } from "react-icons/fa";
+import { useLocation } from "react-router-dom";
 
 const Footer = () => {
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
+
   return (
     <div className="">
-      <div className="h-[70vh] w-[100vw] text-white bg-black mt-[100px] ">
+      <div className={`w-[100vw] mt-[50px]  ${isHomePage ? "bg-black text-white h-[70vh] " : "bg-homeHeaderBg text-textColorBlack h-[70vh]"}`}  >
         <div className="flex justify-around gap-4 h-[60vh] items-center pt-[110px]">
           {/* contact */}
           <div className="w-[20vw]  flex flex-col gap-6 h-[46vh] text-[17px] ml-5">
             <img
-              src="/images/logo-2.png"
+              src={`${isHomePage ? "/images/logo-2.png" :"/images/logo.png" }`}
+              // src="/images/logo-2.png"
               alt="logo"
               className="filter contrast-75 w-[190px] h-[50px]"
             />
@@ -73,7 +78,7 @@ const Footer = () => {
               <div className="pt-[30px] ml-[-15px]">
                 <ul className="flex flex-col gap-4 text-[17px] ">
                   <li className="hover:translate-x-6 group">
-                    <span className="text-black group-hover:text-hoverTextColor">
+                    <span className={`group-hover:text-hoverTextColor ${isHomePage ? "text-black" : "text-salaceTextColor"}`}>
                       {"//"}
                     </span>
                     <span className="cursor-pointer hover:text-hoverTextColor">
@@ -81,7 +86,7 @@ const Footer = () => {
                     </span>
                   </li>
                   <li className="hover:translate-x-6 group">
-                    <span className="text-black group-hover:text-hoverTextColor">
+                    <span className={`group-hover:text-hoverTextColor ${isHomePage ? "text-black" : "text-salaceTextColor"}`}>
                       {"//"}
                     </span>
                     <span className="cursor-pointer hover:text-hoverTextColor">
@@ -89,7 +94,7 @@ const Footer = () => {
                     </span>
                   </li>
                   <li className="hover:translate-x-6 group">
-                    <span className="text-black group-hover:text-hoverTextColor">
+                    <span className={`group-hover:text-hoverTextColor ${isHomePage ? "text-black" : "text-salaceTextColor"}`}>
                       {"//"}
                     </span>
                     <span className="cursor-pointer hover:text-hoverTextColor">
@@ -97,7 +102,7 @@ const Footer = () => {
                     </span>
                   </li>
                   <li className="hover:translate-x-6 group">
-                    <span className="text-black group-hover:text-hoverTextColor">
+                    <span className={`group-hover:text-hoverTextColor ${isHomePage ? "text-black" : "text-salaceTextColor"}`}>
                       {"//"}
                     </span>
                     <span className="cursor-pointer hover:text-hoverTextColor">
@@ -105,7 +110,7 @@ const Footer = () => {
                     </span>
                   </li>
                   <li className="hover:translate-x-6 group">
-                    <span className="text-black group-hover:text-hoverTextColor">
+                    <span className={`group-hover:text-hoverTextColor ${isHomePage ? "text-black" : "text-salaceTextColor"}`}>
                       {"//"}
                     </span>
                     <span className="cursor-pointer hover:text-hoverTextColor">
@@ -113,7 +118,7 @@ const Footer = () => {
                     </span>
                   </li>
                   <li className="hover:translate-x-6 group">
-                    <span className="text-black group-hover:text-hoverTextColor">
+                    <span className={`group-hover:text-hoverTextColor ${isHomePage ? "text-black" : "text-salaceTextColor"}`}>
                       {"//"}
                     </span>
                     <span className="cursor-pointer hover:text-hoverTextColor">
@@ -131,7 +136,7 @@ const Footer = () => {
               <div className="pt-[30px] ml-[-15px]">
                 <ul className="flex flex-col gap-4 text-[17px]">
                   <li className="hover:translate-x-6 group">
-                    <span className="text-black group-hover:text-hoverTextColor">
+                    <span className={`group-hover:text-hoverTextColor ${isHomePage ? "text-black" : "text-salaceTextColor"}`}>
                     {"//"}
                     </span>
                     <span className="cursor-pointer hover:text-hoverTextColor">
@@ -139,7 +144,7 @@ const Footer = () => {
                     </span>
                   </li>
                   <li className="hover:translate-x-6 group">
-                    <span className="text-black group-hover:text-hoverTextColor">
+                    <span className={`group-hover:text-hoverTextColor ${isHomePage ? "text-black" : "text-salaceTextColor"}`}>
                       {"//"}
                     </span>
                     <span className="cursor-pointer hover:text-hoverTextColor">
@@ -147,7 +152,7 @@ const Footer = () => {
                     </span>
                   </li>
                   <li className="hover:translate-x-6 group">
-                    <span className="text-black group-hover:text-hoverTextColor">
+                    <span className={`group-hover:text-hoverTextColor ${isHomePage ? "text-black" : "text-salaceTextColor"}`}>
                       {"//"}
                     </span>
                     <span className="cursor-pointer hover:text-hoverTextColor">
@@ -155,7 +160,7 @@ const Footer = () => {
                     </span>
                   </li>
                   <li className="hover:translate-x-6 group">
-                    <span className="text-black group-hover:text-hoverTextColor">
+                    <span className={`group-hover:text-hoverTextColor ${isHomePage ? "text-black" : "text-salaceTextColor"}`}>
                       {"//"}
                     </span>
                     <span className="cursor-pointer hover:text-hoverTextColor">
@@ -163,7 +168,7 @@ const Footer = () => {
                     </span>
                   </li>
                   <li className="hover:translate-x-6 group">
-                    <span className="text-black group-hover:text-hoverTextColor">
+                    <span className={`group-hover:text-hoverTextColor ${isHomePage ? "text-black" : "text-salaceTextColor"}`}>
                       {"//"}
                     </span>
                     <span className="cursor-pointer hover:text-hoverTextColor">
@@ -171,7 +176,7 @@ const Footer = () => {
                     </span>
                   </li>
                   <li className="hover:translate-x-6 group">
-                    <span className="text-black group-hover:text-hoverTextColor">
+                    <span className={`group-hover:text-hoverTextColor ${isHomePage ? "text-black" : "text-salaceTextColor"}`}>
                       {"//"}
                     </span>
                     <span className="cursor-pointer hover:text-hoverTextColor">
@@ -189,7 +194,7 @@ const Footer = () => {
               <div className="pt-[30px] ml-[-15px]">
                 <ul className="flex flex-col gap-4 text-[17px]">
                   <li className="hover:translate-x-6 group">
-                    <span className="text-black group-hover:text-hoverTextColor">
+                    <span className={`group-hover:text-hoverTextColor ${isHomePage ? "text-black" : "text-salaceTextColor"}`}>
                     {"//"}
                     </span>
                     <span className="cursor-pointer hover:text-hoverTextColor">
@@ -197,7 +202,7 @@ const Footer = () => {
                     </span>
                   </li>
                   <li className="hover:translate-x-6 group">
-                    <span className="text-black group-hover:text-hoverTextColor">
+                    <span className={`group-hover:text-hoverTextColor ${isHomePage ? "text-black" : "text-salaceTextColor"}`}>
                     {"//"}
                     </span>
                     <span className="cursor-pointer hover:text-hoverTextColor">
@@ -205,7 +210,7 @@ const Footer = () => {
                     </span>
                   </li>
                   <li className="hover:translate-x-6 group">
-                    <span className="text-black group-hover:text-hoverTextColor">
+                    <span className={`group-hover:text-hoverTextColor ${isHomePage ? "text-black" : "text-salaceTextColor"}`}>
                     {"//"}
                     </span>
                     <span className="cursor-pointer hover:text-hoverTextColor">
@@ -213,7 +218,7 @@ const Footer = () => {
                     </span>
                   </li>
                   <li className="hover:translate-x-6 group">
-                    <span className="text-black group-hover:text-hoverTextColor">
+                    <span className={`group-hover:text-hoverTextColor ${isHomePage ? "text-black" : "text-salaceTextColor"}`}>
                     {"//"}
                     </span>
                     <span className="cursor-pointer hover:text-hoverTextColor">
@@ -221,7 +226,7 @@ const Footer = () => {
                     </span>
                   </li>
                   <li className="hover:translate-x-6 group">
-                    <span className="text-black group-hover:text-hoverTextColor">
+                    <span className={`group-hover:text-hoverTextColor ${isHomePage ? "text-black" : "text-salaceTextColor"}`}>
                     {"//"}
                     </span>
                     <span className="cursor-pointer hover:text-hoverTextColor">
@@ -229,7 +234,7 @@ const Footer = () => {
                     </span>
                   </li>
                   <li className="hover:translate-x-6 group">
-                    <span className="text-black group-hover:text-hoverTextColor">
+                    <span className={`group-hover:text-hoverTextColor ${isHomePage ? "text-black" : "text-salaceTextColor"}`}>
                       {"//"}
                     </span>
                     <span className="cursor-pointer hover:text-hoverTextColor">

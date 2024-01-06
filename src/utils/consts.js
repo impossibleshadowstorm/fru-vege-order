@@ -96,6 +96,65 @@ const featuredata = [
     discountedPrice: 19.23,
     originalPrice: 2000,
   },
+  {
+    name: "Beer-Ice",
+    items: 85,
+    imgUrl: "/images/bocali pic/10.png",
+    discountPercent: 23,
+    discountedPrice: 19.23,
+    originalPrice: 2000,
+  },
+  {
+    name: "Ice-Drinks",
+    items: 85,
+    imgUrl: "/images/bocali pic/12.png",
+    discountPercent: 23,
+    discountedPrice: 19.23,
+    originalPrice: 2000,
+  },
+
+  {
+    name: "Fruit-Juice",
+    items: 45,
+    imgUrl: "/images/bocali pic/tomato.png",
+    discountPercent: 23,
+    discountedPrice: 19.23,
+    originalPrice: 2000,
+  },
+  {
+    name: "Beer-Ice",
+    items: 15,
+    imgUrl: "/images/bocali pic/8.png",
+    discountPercent: 23,
+    discountedPrice: 19.23,
+    originalPrice: 2000,
+  },
+  {
+    name: "Juice",
+    items: 45,
+    imgUrl: "/images/bocali pic/14.png",
+    discountPercent: 23,
+    discountedPrice: 19.23,
+    originalPrice: 2000,
+  },
+  {
+    name: "Ice-Drinks",
+    items: 15,
+    imgUrl: "/images/bocali pic/15.png",
+    discountPercent: 23,
+    discountedPrice: 19.23,
+    originalPrice: 2000,
+  },
+  {
+    name: "Cold-Juice",
+    items: 15,
+    imgUrl: "/images/bocali pic/9.png",
+    discountPercent: 23,
+    discountedPrice: 19.23,
+    originalPrice: 2000,
+  },
+  
+
   
 ];
 

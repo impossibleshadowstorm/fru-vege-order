@@ -2,6 +2,8 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
 import Footer from "../../../components/common/footer/footer";
+import DeliveryMode from "../../../components/home/deliverymode/deliverymode";
+// import LTRAnimatedBtn from "../../../components/common/btnComponent/ltr-animated-btn";
 
 const Register = () => {
   const {
@@ -15,13 +17,13 @@ const Register = () => {
   return (
     <>
       <div className=" w-[100%] container mx-auto my-20">
-        <div className="container section-title mb-12  text-center  ">
+        <div className="container section-title mb-12 text-textColorBlack text-center">
           <h1 className=" text-5xl mb-5 font-bold">
             Sign In
             <br />
             To Your Account
           </h1>
-          <p className="">
+          <p className="text-textColorBlack">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br />
             Sit aliquid, Non distinctio vel iste.
           </p>
@@ -81,29 +83,33 @@ const Register = () => {
                 className="px-5 h-14 w-full border-solid border-2 mb-8"
               />
 
-              <div className="radio-one w-full">
+              <div className="radio-one text-textColorBlack pb-4 flex justify-left">
                 <input
                   {...register("Developer", { required: true })}
-                  type="radio"
+                  type="checkbox"
                   value="yes."
-                  className=" border-2 mb-8 text-black leading-none "
+                  className="border-2 text-black leading-none"
                 />
-                <label>
+                <label className="px-3 items-center">
                   I consent to Herboil processing my personal data in order to
                   send personalized marketing material in accordance with the
                   consent form and the privacy policy
                 </label>
               </div>
-              <div className="radio-one w-full mb-5">
+              <div className="radio-one w-full mb-5 text-textColorBlack pb-2">
                 <input
                   {...register("Developer", { required: true })}
-                  type="radio"
+                  type="checkbox"
                   value="No"
+                  className=""
                 />
-                <label>
+                <label className="p-4">
                   By clicking "create account", I consent to the privacy policy.
                 </label>
               </div>
+
+             
+              {/* <LTRAnimatedBtn name={"CREATE ACCOUNT"} />  */}
 
               <motion.button
                 type="submit"
@@ -113,20 +119,20 @@ const Register = () => {
                   scale: { type: "spring", stiffness: 300 },
                   duration: 1.5,
                 }}
-                className={`relative bg-black border py-2.5 px-3 font-medium text-white transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-headerCtaButtonBg before:transition-transform before:duration-300 before:content-[''] hover:text-white hover:border hover:border-transparent before:hover:scale-x-100  w-full`}
+                className={`relative bg-otherHeaderBg border py-2.5 px-3 font-medium text-textColorWhite transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-headerCtaButtonBg before:transition-transform before:duration-300 before:content-[''] hover:text-white hover:border hover:border-transparent before:hover:scale-x-100  w-full`}
               >
                 CREATE ACCOUNT
               </motion.button>
             </form>
-            <div className="text-center">
+            <div className="text-center text-textColorBlack">
               <p className="mb-5">By creating an account, you agree to our:</p>
-              <p>
-                <a href="/" className="hover:text-[blue] mb-5">
+              <p className="mb-5">
+                <a href="/" className="hover:text-[blue]">
                   TERMS OF CONDITIONS | PRIVACY POLICY
                 </a>
               </p>
               <p>
-                <a href="/" className="hover:text-[blue] mt-50">
+                <a href="/" className="hover:text-[blue]">
                   ALREADY HAVE AN ACCOUNT ?
                 </a>
               </p>
@@ -134,6 +140,7 @@ const Register = () => {
           </div>
         </div>
       </div>
+      <DeliveryMode />
       <Footer />
     </>
   );

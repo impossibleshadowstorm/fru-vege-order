@@ -16,7 +16,7 @@ const TopRatedProduct = () => {
           <p className=" rounded-3xl text-[54px] text-otherTextColor">-</p>
           <p className="rounded-full text-[42px] text-otherTextColor">.</p>
         </div>
-        <p className="text-[19px] font-bold pt-2 text-textColorBlack">Top Rated Product</p>
+        <p className="text-[19px] font-semibold pt-2 text-textColorBlack">Top Rated Product</p>
       </div>
 
       {data.categoryData.slice(0, 3).map((item, key) => (

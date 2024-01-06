@@ -24,10 +24,12 @@
     --landing-sec-bg: #F7F5EB;
     --input-outline-color: #80B500;
     --text-color: #80b603;
+    --salace-color: #F7F5EB;
     --text-color-white: black;
     --text-color-black: white;
     --other-text-color: #80b603;
     --hover-text-color: #80b603;
+    --other-hover-text-color: white;
     --star-text-color: #ffb800;
     --border-color: #80b603;
   }
@@ -43,15 +45,17 @@
     --other-header-text: rgb(249, 243, 243);
     --other-header-bg: #d8d8d8;
     --header-cta-button-bg: #000000;
-    --hover-header-cta-button-bg: #3f3f3f;
+    --hover-header-cta-button-bg: #1a1a1a;
     --other-header-cta-button-bg: rgb(10, 10, 10);
     --landing-sec-bg: #1a1a19;
     --input-outline-color: #e0f8a7;
     --text-color: #222222;
+    --salace-color: #080808;
     --text-color-white: white;
     --text-color-black: black;
     --other-text-color:#ffffff;
     --hover-text-color: #c5fe41;
+    --other-hover-text-color: rgb(219, 219, 219);
     --star-text-color: #ffb800;
     --border-color: #feb17e;
     
