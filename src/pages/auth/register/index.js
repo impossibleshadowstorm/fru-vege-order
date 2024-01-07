@@ -17,9 +17,9 @@ const Register = () => {
       <div className=" w-[100%] container mx-auto my-20">
         <div className="container section-title mb-12  text-center  ">
           <h1 className=" text-5xl mb-5 font-bold">
-            Sign In
+            Register
             <br />
-            To Your Account
+            Your Account
           </h1>
           <p className="">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br />
