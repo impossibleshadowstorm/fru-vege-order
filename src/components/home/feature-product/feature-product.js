@@ -11,7 +11,7 @@ const FeatureProduct = () => {
           <p className="text-center text-6xl font-bold text-textColorBlack">Featured Products</p>
         </div>
        <div className="flex flex-wrap gap-5 justify-center pt-2">
-        {data.featuredata.map((item, index) => (
+        {data.featuredata.slice(7).map((item, index) => (
           <SingleProductCard key={index}  
           name={item.name}
           discountedPrice={item.discountedPrice}

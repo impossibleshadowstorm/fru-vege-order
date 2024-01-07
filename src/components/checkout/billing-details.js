@@ -125,7 +125,7 @@ const BillingDetails = () => {
                 <div className="relative col-span-4">
                   <FaEnvelope
                     size={16}
-                    className="absolute top-[16px] right-[16px] text-textColor"
+                    className="absolute top-[16px] right-[16px] text-otherTextColor"
                   />
                   <div className="border border-solid w-100% px-5 py-4">
                     <label className="border border-solid w-100% px-5 py-4">

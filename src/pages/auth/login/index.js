@@ -2,6 +2,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
 import Footer from "../../../components/common/footer/footer";
+import DeliveryMode from "../../../components/home/deliverymode/deliverymode";
 const Login = () => {
   const {
     register,
@@ -15,7 +16,7 @@ const Login = () => {
   return (
     <>
       <div className=" w-[100%] container mx-auto my-20">
-        <div className="container section-title mb-12  text-center  ">
+        <div className="container section-title mb-12 text-textColorBlack text-center  ">
           <h1 className=" text-5xl mb-5 font-bold">
             Sign In
             <br />
@@ -27,7 +28,7 @@ const Login = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-textColorBlack">
           <div className=" w-100% ">
             <form onSubmit={handleSubmit(onSubmit)} className="p-10  ">
               <input
@@ -58,7 +59,7 @@ const Login = () => {
                   scale: { type: "spring", stiffness: 300 },
                   duration: 1.5,
                 }}
-                className={`relative bg-black border py-2.5 px-3 font-medium text-white transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-headerCtaButtonBg before:transition-transform before:duration-300 before:content-[''] hover:text-white hover:border hover:border-transparent before:hover:scale-x-100  w-full`}
+                className={`relative bg-otherHeaderBg border py-2.5 px-3 font-medium text-textColorWhite transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-headerCtaButtonBg before:transition-transform before:duration-300 before:content-[''] hover:text-white hover:border hover:border-transparent before:hover:scale-x-100  w-full`}
               >
                 SIGN IN
               </motion.button>
@@ -87,13 +88,14 @@ const Login = () => {
                 scale: { type: "spring", stiffness: 300 },
                 duration: 1.5,
               }}
-              className={`relative bg-black border py-2.5 px-3 font-medium text-white transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-headerCtaButtonBg before:transition-transform before:duration-300 before:content-[''] hover:text-white hover:border hover:border-transparent before:hover:scale-x-100 w-3/6 `}
+              className={`relative bg-otherHeaderBg border py-2.5 px-3 font-medium text-textColorWhite transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-headerCtaButtonBg before:transition-transform before:duration-300 before:content-[''] hover:text-white hover:border hover:border-transparent before:hover:scale-x-100 w-3/6 `}
             >
               SIGN IN
             </motion.button>
           </div>
         </div>
       </div>
+      <DeliveryMode />
       <Footer />
     </>
   );

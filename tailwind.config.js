@@ -40,9 +40,11 @@ module.exports = {
         textColor: "var(--text-color)",
         otherTextColor: "var(--other-text-color)",
         hoverTextColor: "var(--hover-text-color)",
+        otherHoverTextColor: "var(--other-hover-text-color)",
         starColor: "var(--star-text-color)",
         textColorBlack : "var(--text-color-white)",
         textColorWhite: "var(--text-color-black)",
+        salaceTextColor: "var(--salace-color)",
       },
       borderColor: {
         homeBorder: "var(--border-color)",

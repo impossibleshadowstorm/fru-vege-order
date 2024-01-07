@@ -8,7 +8,7 @@ import DeliveryMode from "../../components/home/deliverymode/deliverymode";
 const Cart = () => {
   return (
     <div className="bg-fullBg">
-        <div className="container mx-auto px-[60px] pt-20 pb-2 border-b mb-[90px]">
+        <div className="container mx-auto px-[60px] pt-20 pb-[20px] border-b mb-[90px]">
           <ShopingCart />
           <ShopingCart />
           <CartCoupon />

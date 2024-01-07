@@ -28,6 +28,7 @@ const Layout = () => {
             : 'url("/images/home/category/thirdsection-img.jpg")',
 
           position: "relative",
+          
         }}
       >
         {isHomePage ? <TopHeader /> : null}

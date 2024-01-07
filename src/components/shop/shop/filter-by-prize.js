@@ -9,7 +9,7 @@ const FilterByPrize = () => {
             <p className=" rounded-3xl text-[54px] text-otherTextColor">-</p>
             <p className="rounded-full text-[42px] text-otherTextColor">.</p>
           </div>
-          <p className="text-[16px] font-bold pt-2 text-textColorBlack">Filter By Price</p>
+          <p className="text-[19px] font-semibold pt-2 text-textColorBlack">Filter By Price</p>
         </div>
 
         <div className="px-5">
