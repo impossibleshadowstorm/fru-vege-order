@@ -16,6 +16,7 @@ const Layout = () => {
   const isCartPage = location.pathname === "/cart";
   const isLoginPage = location.pathname === "/auth";
   const isRegisterPage = location.pathname === "/auth/register";
+  const isCheckoutPage = location.pathname === "/checkout";
 
   return (
     <div className={`bg-boxBg ${theme}`}>
@@ -52,6 +53,11 @@ const Layout = () => {
         {isRegisterPage ? (
           <Breadcrumb title={"Account"} pageName={"Register"} />
         ) : null}
+        {isCheckoutPage ? (
+          <Breadcrumb title={"Checkout"} pageName={"Checkout"} />
+        ): null}
+
+        
 
         <div
           className={`${

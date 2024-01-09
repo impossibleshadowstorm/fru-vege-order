@@ -1,5 +1,5 @@
 import React from "react";
-import LTRAnimatedBtn from "../../components/common/btnComponent/ltr-animated-btn";
+import LTRAnimatedBtn from "../common/btnComponent/ltr-animated-btn";
 
 const CartCoupon = () => {
   return (
