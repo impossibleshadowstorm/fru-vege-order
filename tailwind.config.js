@@ -30,6 +30,7 @@ module.exports = {
         boxBg: "var(--box-bg)",
         hoverArrowBg: "var(--hover-arrow-bg)",
         activeInputBg: "var(--active-input-field)",
+        ordertracking: "var(--tracking-bg)",
         
       },
       dropdownBackgroundColor: {

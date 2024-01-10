@@ -28,8 +28,8 @@ const BillingDetails = () => {
   };
 
   return (
-    <div className="container mx-auto mt-[130px]">
-      <div className="px-5 py-6 bg-[#F7F5EB] mb-8">
+    <div className="container mx-auto mt-[130px] text-textColorBlack">
+      <div className="px-5 py-6 bg-ordertracking border mb-8">
         <h5 className="text-lg font-bold">
           Returning customer?{" "}
           <a className="text-[#80B500]" href="#cd">
@@ -37,7 +37,7 @@ const BillingDetails = () => {
           </a>
         </h5>
       </div>
-      <div className="px-5 py-6 bg-[#F7F5EB] mb-8">
+      <div className="px-5 py-6 bg-ordertracking border mb-8">
         <h5 className="text-lg font-bold">
           Have a coupon?{" "}
           <a className="text-[#80B500]" href="#cd">

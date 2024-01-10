@@ -14,6 +14,8 @@ import ProductDetail from "./pages/product-detail";
 import { useSelector, useDispatch } from "react-redux";
 import { lightTheme, darkTheme } from "./reducers/website-theme-reducer";
 import alldata from "./utils/consts";
+import OrderTracking from "./pages/tracking";
+import MyAccount from "./pages/account";
 
 const router = createBrowserRouter([
   {
@@ -41,6 +43,10 @@ const router = createBrowserRouter([
         element: <Cart />,
       },
       {
+        path: "/account",
+        element: <MyAccount />,
+      },
+      {
         path: "/auth",
         children: [
           {
@@ -60,6 +66,10 @@ const router = createBrowserRouter([
       {
         path: "/checkout",
         element: <Checkout />,
+      },
+      {
+        path: "/ordertracking",
+        element: <OrderTracking />,
       },
     ],
   },

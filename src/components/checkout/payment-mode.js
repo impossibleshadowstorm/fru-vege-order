@@ -6,12 +6,12 @@ const PaymentMode = () => {
     const [visibility, setVisibility] = useState(false);
 
     return (
-      <div className="flex flex-col border-b">
+      <div className="flex flex-col border-b text-textColorBlack">
         <div
           onClick={() => setVisibility(!visibility)}
           className="flex justify-left items-center gap-4 pl-4 py-[30px]"
         >
-          <input checked={visibility} type="radio" name="" className="w-4 h-4 text-[blue]"/>
+          <input checked={visibility} type="radio" name="" className="w-4 h-4"/>
           <p className="text-lg font-bold">{title}</p>
           <div className="w-[120px] h-[26px]">
             <img src={`./images/${title.toLowerCase()}.png`} alt="" />
@@ -28,7 +28,7 @@ const PaymentMode = () => {
   };
 
   return (
-      <div className="w-[50%]">
+      <div className="w-[50%] text-textColorBlack">
         <h2 className="font-bold text-3xl">Payment Method</h2>
 
         <div className="border my-[32px]">

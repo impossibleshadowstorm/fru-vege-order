@@ -2,7 +2,7 @@ import React from "react";
 
 const CartTotal = () => {
   return (
-    <div className="grid md:grid-cols-12">
+    <div className="grid md:grid-cols-12 ">
       <div className="col-span-4"></div>
       <div className="col-span-8 w-100%">
         <h4 className="mb-[30px] font-bold text-3xl">Cart Totals</h4>
