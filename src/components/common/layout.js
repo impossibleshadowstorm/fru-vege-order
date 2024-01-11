@@ -15,7 +15,10 @@ const Layout = () => {
   const isShop = location.pathname === "/shop";
   const isCartPage = location.pathname === "/cart";
   const isLoginPage = location.pathname === "/auth";
+  const isAccountPage = location.pathname === "/account";
   const isRegisterPage = location.pathname === "/auth/register";
+  const isCheckoutPage = location.pathname === "/checkout";
+  const isOrderTracking = location.pathname === "/ordertracking";
 
   return (
     <div className={`bg-boxBg ${theme}`}>
@@ -46,12 +49,22 @@ const Layout = () => {
         {isCartPage ? (
           <Breadcrumb title={"Shopping Bag"} pageName={"Cart"} />
         ) : null}
+        {isAccountPage ? (
+          <Breadcrumb title={"My Account"} pageName={"My Account"} />
+        ) : null}
         {isLoginPage ? (
           <Breadcrumb title={"Account"} pageName={"Login"} />
         ) : null}
         {isRegisterPage ? (
           <Breadcrumb title={"Account"} pageName={"Register"} />
         ) : null}
+        {isCheckoutPage ? (
+          <Breadcrumb title={"Checkout"} pageName={"Checkout"} />
+        ): null}
+        {isOrderTracking ? (
+          <Breadcrumb title={"Order Tracking"} pageName={"Order Tracking"} />
+        ): null}
+
 
         <div
           className={`${

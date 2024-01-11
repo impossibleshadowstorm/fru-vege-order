@@ -15,6 +15,7 @@
     --box-bg : white;
     --full-bg: white;
     --hover-arrow-bg: #80B500;
+    --active-input-field : #80B500;
     --form-bg: #f0f4f7;
     --home-header-text: rgb(0, 0, 0);
     --other-header-text: white;
@@ -33,6 +34,8 @@
     --other-hover-text-color: white;
     --star-text-color: #ffb800;
     --border-color: #80b603;
+    --tracking-bg: #F7F5EB;
+    --table-bg: #F7F8FA;
   }
 
 
@@ -41,6 +44,7 @@
     --box-bg : black;
     --full-bg : black;
     --hover-arrow-bg : white;
+    --active-input-field : white;
     --form-bg: #0e0e0e;
     --home-header-text: rgb(237, 237, 237);
     --other-header-text: rgb(249, 243, 243);
@@ -59,7 +63,8 @@
     --other-hover-text-color: rgb(219, 219, 219);
     --star-text-color: #ffb800;
     --border-color: #feb17e;
-    
+    --tracking-bg: #090909;
+    --table-bg: #000000;
   }
 }
 

@@ -4,7 +4,7 @@ import RLTRAnimatedBtn from "../common/btnComponent/rltr-animated-btn";
 const CartTotal = () => {
   return (
     <div className="grid md:grid-cols-12 mt-20">
-      <div className="col-span-8 "></div>
+      <div className="col-span-8"></div>
       <div className="col-span-4 w-100">
         <h4 className="mb-4 font-bold text-xl">Cart Totals</h4>
 
